@@ -243,7 +243,7 @@ Specification
     are also allowed in a fragment shader.
 
     For the "Grad" functions, dPdx is the explicit derivative of P with respect
-    to window x, and similarly dPdy with respect to window y. For the “ProjGrad”
+    to window x, and similarly dPdy with respect to window y. For the "ProjGrad"
     functions, dPdx is the explicit derivative of the projected P with respect
     to window x, and similarly for dPdy with respect to window y.  For a
     one-dimensional texture, dPdx and dPdy are float.  For a two-dimensional
