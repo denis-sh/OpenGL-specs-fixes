@@ -372,7 +372,7 @@ Additions to Chapter 3 of the OpenGL 2.0 Specification (Rasterization)
     the resulting texture with internal component resolutions of its own
     choosing.  If a sized internal format is specified, the mapping of the
     R, G, B, A, and depth values to texture components is equivalent to the
-    mapping of the corresponding base internal formatís components, as
+    mapping of the corresponding base internal format's components, as
     specified in table 3.15, the type (unsigned int, float, etc.) is
     assigned the same type specified by <internalFormat>, and the memory
     allocation per texture component is assigned by the GL to match the
@@ -565,7 +565,7 @@ Operations and the Frame Buffer)
     color buffer is floating-point, no clamping occurs.  The
     resulting four values are sent to the next operation.
 
-    Blending is dependent on the incoming fragment’s alpha value and
+    Blending is dependent on the incoming fragment's alpha value and
     that of the corresponding currently stored pixel. Blending applies
     only in RGBA mode and only one of the following conditions is true:
         

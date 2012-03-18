@@ -107,7 +107,7 @@ Additions to Chapter 2 of the OpenGL 2.1 Specification (Buffer Objects)
     Add to the end of Section 2.9 (p. 38):
 
     All or part of the data store of a buffer object may be mapped into the
-    client’s address space by calling
+    client's address space by calling
 
 	void *MapBufferRange( enum target, intptr offset, sizeiptr length,
 	    bitfield access );
