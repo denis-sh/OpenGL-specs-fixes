@@ -2,12 +2,12 @@
 Name
 
     EXT_multi_draw_arrays
-    SUN_multi_draw_arrays
+    (was SUN_multi_draw_arrays)
 
 Name Strings
 
     GL_EXT_multi_draw_arrays
-    GL_SUN_multi_draw_arrays
+    GL_SUN_multi_draw_arrays (legacy)
 
     (Note: this extension has been promoted from SUN to EXT status.
     Implementations should advertise both name strings, and both EXT
