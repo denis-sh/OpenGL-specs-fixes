@@ -91,9 +91,9 @@ Additions to Chapter 3 of the 1.0 Specification (Rasterization)
 	TEXTURE_MAX_LOD_SGIS		float	    any value
 	TEXTURE_BASE_LEVEL_SGIS		integer	    any non-negative integer
 	TEXTURE_MAX_LEVEL_SGIS		integer	    any non-negative integer
-	TEXTURE_LOD_BIAS_S_SGIX	float	    any value
-	TEXTURE_LOD_BIAS_T_SGIX	float	    any value
-	TEXTURE_LOD_BIAS_R_SGIX	float	    any value
+	TEXTURE_LOD_BIAS_S_SGIX		float	    any value
+	TEXTURE_LOD_BIAS_T_SGIX		float	    any value
+	TEXTURE_LOD_BIAS_R_SGIX		float	    any value
 
 	Table 3.7: Texture parameters and their values.
 
