@@ -7,20 +7,20 @@ Name Strings
     GL_ARB_half_float_vertex
 
 Contact
-	
+
     Daniel Koch, TransGaming, Inc (daniel 'at' transgaming.com)
 
 Status
-	
+
     Approved by the ARB on July 11, 2008
 
 Version 
-	
+
     Last Modified Date:   August 7, 2008
     Version               5
 
 Number
-	
+
     ARB Extension #48
 
 Dependencies
@@ -30,7 +30,7 @@ Dependencies
     Based on the NV_half_float and OES_vertex_half_float extensions.
 
 Overview
-	
+
     This extension extends the usage of the half-precision (16-bit) floating-
     point quantities introduced in ARB_half_float_pixel for usage in specifying
     vertex array data.
