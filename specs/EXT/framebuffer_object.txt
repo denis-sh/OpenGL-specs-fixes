@@ -250,13 +250,6 @@ Glossary of Helpful Terms
             images.  (for complete definition, see section 4.4.4.2)
 
 
-Issues
-
-    Breaking from past convention, the very large issues section has
-    been moved to the end of the document.  It can be found after
-    Examples, before Revision History.
-
-
 New Procedures and Functions
 
     boolean IsRenderbufferEXT(uint renderbuffer);
