@@ -50,7 +50,7 @@ New Tokens
     Accepted as a bit in the attribute value for
     GLX_CONTEXT_PROFILE_MASK_ARB in <*attrib_list>:
 
-	GLX_CONTEXT_ES2_PROFILE_BIT_EXT		0x00000004
+        GLX_CONTEXT_ES2_PROFILE_BIT_EXT         0x00000004
 
 Additions to the OpenGL / WGL Specifications
 
@@ -105,11 +105,11 @@ Additions to the GLX 1.4 Specification
     defined only by the core or compatibility profiles, unless such
     functionality is defined by extensions that are themselves specified
     relative to OpenGL ES 2.0[*].
-	[*] Such functionality should have a corresponding extension
-	specification in the OpenGL ES Registry. In some
-	implementations, vendor extensions defined relative to OpenGL ES
-	2.0, but not yet added to the OpenGL ES Registry, may also be
-	supported."
+        [*] Such functionality should have a corresponding extension
+        specification in the OpenGL ES Registry. In some
+        implementations, vendor extensions defined relative to OpenGL ES
+        2.0, but not yet added to the OpenGL ES Registry, may also be
+        supported."
 
     Replace the bullet point starting "* If attribute
     GLX_CONTEXT_PROFILE_MASK_ARB has no bits set;..." with

@@ -84,8 +84,8 @@ Additions to Chapter 2 of the OpenGL 1.2 Specification (OpenGL Operation)
       Alternately, the current raster position may be set by one of the
       WindowPosMESA commands:
 
-	 void WindowPos{234}{sidf}MESA( T coords );
-	 void WindowPos{234}{sidf}vMESA( T coords );
+         void WindowPos{234}{sidf}MESA( T coords );
+         void WindowPos{234}{sidf}vMESA( T coords );
 
       WindosPos4MESA takes four values indicating x, y, z, and w.
       WindowPos3MESA (or WindowPos2MESA) is analaguos, but sets only

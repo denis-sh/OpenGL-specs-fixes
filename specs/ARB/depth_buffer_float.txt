@@ -527,8 +527,8 @@ Revision History
      3    07/11/08  Jon Leech Change NV enum values due to incompatible
                               clamping behavior.
 
-     2	  06/30/08  jsandmel  Trivial conversion to ARB_depth_buffer_float
+     2    06/30/08  jsandmel  Trivial conversion to ARB_depth_buffer_float
      
-     1	  06/05/08  pboudier  Forked from NV_depth_buffer_float. Restore
-			      clamping to [0,1] and remove 'd' entry
-			      points. Change suffix from NV to EXT.
+     1    06/05/08  pboudier  Forked from NV_depth_buffer_float. Restore
+                              clamping to [0,1] and remove 'd' entry
+                              points. Change suffix from NV to EXT.

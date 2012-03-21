@@ -154,9 +154,9 @@ Additions to Chapter 5 of the 1.0 Specification (Special Functions)
 
     The following commands are not included in display lists:
 
-	InstrumentsBufferSGIX
-	PollInstrumentsSGIX
-	GetInstrumentsSGIX
+        InstrumentsBufferSGIX
+        PollInstrumentsSGIX
+        GetInstrumentsSGIX
 
     Add a section 5.X entitled  Instruments:
 
@@ -284,11 +284,11 @@ Errors
 
 New State
 
-    Initial				Initial
-    Get Value				Get Command	Type	Value 	Attrib
-    ---------				-----------	----	-----	------
-    INSTRUMENT_MEASUREMENTS_SGIX	GetInteger	Z	0	  -
-    INSTRUMENT_BUFFER_POINTER_SGIX	GetPointervEXT	Y	0	  -
+    Initial                             Initial
+    Get Value                           Get Command     Type    Value   Attrib
+    ---------                           -----------     ----    -----   ------
+    INSTRUMENT_MEASUREMENTS_SGIX        GetInteger      Z       0         -
+    INSTRUMENT_BUFFER_POINTER_SGIX      GetPointervEXT  Y       0         -
 
 New Implementation Dependent State
 

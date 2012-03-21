@@ -118,7 +118,7 @@ Additions to Chapter 2 of the OpenGL 2.1 Specification (OpenGL Operation)
     organization of vertex data are called while a non-zero vertex array
     object is bound, zero is bound to the ARRAY_BUFFER buffer object,
     and the pointer is not NULL[fn].
-	[fn: This error makes it impossible to create a vertex array
+        [fn: This error makes it impossible to create a vertex array
               object containing client array pointers.]
 
 Additions to Chapter 3 of the OpenGL 2.1 Specification (Rasterization)

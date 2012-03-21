@@ -76,7 +76,7 @@ IP Status
 New Tokens
 
     Accepted by the <internalFormat> parameter of TexImage1D, TexImage2D,
-    TexImage3D, CopyTexImage1D, and CopyTexImage2D: 	
+    TexImage3D, CopyTexImage1D, and CopyTexImage2D:     
 
         R8                      0x8229
         R16                     0x822A
@@ -163,7 +163,7 @@ Additions to Chapter 3 of the OpenGL 2.1 Specification (Rasterization)
 
     Base Internal Format  RGBA and Depth Values   Internal Components
     --------------------  ---------------------   -------------------
-    RED			  R			  R
+    RED                   R                       R
     RG                    R,G                     R,G
 
     (Add the following to Table 3.16: "Correspondence of sized internal
@@ -322,19 +322,19 @@ Issues
     
     1) What should this extension be called? ARB_rg_formats, ARB_rg_texture,
        ARB_texture_rg, etc
-	
-	DECIDED. Using ARB_texture_rg.
+        
+        DECIDED. Using ARB_texture_rg.
 
     2) Why use RED token used instead of just "R"? 
-	
+        
        a) there is already some precedent for using RED for single-component
           images
        b) the "R" token is already used for texcoord generation, and it is
           less confusing if we don't reuse it.
 
      3) Why use RG instead of REDGREEN?
-	
-	The list {RED, RG, RGB, RGBA} is more visually appealing than 
+        
+        The list {RED, RG, RGB, RGBA} is more visually appealing than 
         {RED, REDGREEN, RGB, RGBA}.
 
      4) Why don't the new tokens and entry points in this extension have
