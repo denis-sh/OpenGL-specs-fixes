@@ -6,10 +6,6 @@ Name Strings
 
     GL_EXT_pixel_buffer_object
 
-Status
-
-    Implemented by NVIDIA drivers (Release 55).
-
 Contributors
 
     Ralf Biermann
@@ -37,6 +33,7 @@ Number
 
 Status
 
+    Implemented by NVIDIA drivers (Release 55).
     NVIDIA Release 55 (early 2004) drivers support this extension.
 
 Dependencies
