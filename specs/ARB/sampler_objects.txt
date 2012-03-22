@@ -167,8 +167,8 @@ Additions to Chapter 3 of the OpenGL 3.2 Specification (Compatibility Profile) (
     made to the state of the bound texture object, and any previous
     binding to <target> is broken.
 
-** This error applies only to 3.2 core profile / 3.1 w/o ARB_compatibility /
-** 3.0 deprecated contexts.
+  ** This error applies only to 3.2 core profile / 3.1 w/o ARB_compatibility /
+  ** 3.0 deprecated contexts.
     BindTexture fails and an INVALID_OPERATION error is generated if
     <texture> is not zero or a name returned from a previous call to
     GenTextures, or if such a name has since been deleted. While a

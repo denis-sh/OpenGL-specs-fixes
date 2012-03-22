@@ -187,7 +187,7 @@ Additions to Chapter 2 of the OpenGL 3.2 Specification (OpenGL Operation)
       - Any of the strings in <path> are not valid pathnames beginning
         with '/'.
 
-*** (compatibility profile only)
+  *** (compatibility profile only)
     An INVALID_OPERATION error is generated if CompileShaderIncludeARB
     is executed between Begin and the corresponding End.
 
