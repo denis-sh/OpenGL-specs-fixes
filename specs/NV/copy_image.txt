@@ -256,7 +256,7 @@ Sample Code
 
 Issues
 
-1) Should there be a single function for all image types, or
+  1) Should there be a single function for all image types, or
    "per-dimensional" functions?
 
     Resolved.
@@ -266,7 +266,7 @@ Issues
     restrict some of the flexibility offered by this extension,
     e.g. copying a slice of data between a 2D and a 3D image.
 
-2) Should the extension support "deep copies", i.e. multiple slices of
+  2) Should the extension support "deep copies", i.e. multiple slices of
    a 3D texture, a 2D array texture, or a cubemap?
 
     Resolved.
@@ -274,7 +274,7 @@ Issues
     Yes, there may be performance advantages in copying a multiple
     slices in a single call.
 
-3) Should renderbuffers be supported by the same function as textures?
+  3) Should renderbuffers be supported by the same function as textures?
 
     Resolved.
 
@@ -282,7 +282,7 @@ Issues
     classes, and allowing them to be used interchangeably has the
     advantage of allowing data transfers between them.
 
-4) Is the "target" parameter necessary?
+  4) Is the "target" parameter necessary?
 
     Resolved.
 
@@ -292,7 +292,7 @@ Issues
     1) Allows the selection of a single cubemap face.
     2) Differentiate between TEXTURE and RENDERBUFFER targets.
 
-5) Should the target TEXTURE_CUBE_MAP be supported, and with what
+  5) Should the target TEXTURE_CUBE_MAP be supported, and with what
    behavior?
 
     Resolved.
@@ -300,7 +300,7 @@ Issues
     Given the resolution of issue 7, this is moot.  The
     TEXTURE_CUBE_MAP token is the only way to access a cubemap.
 
-6) Should the "extra" parameters for a given dimension be ignored, or
+  6) Should the "extra" parameters for a given dimension be ignored, or
    should there be required values?
 
     Resolved.
@@ -311,7 +311,7 @@ Issues
     offset must be zero and the size must be one, e.g. if the target
     is TEXTURE_2D, z must be 0 and depth must be 1.
 
-7) Should the per-face cubemap targets be accepted at all?  Why not
+  7) Should the per-face cubemap targets be accepted at all?  Why not
    use Z as the selector?
 
     Resolved.
@@ -323,7 +323,7 @@ Issues
     Therefore it makes sense to generalize a cubemap as an array of
     size 6, and use the Z parameter to select the face(s).
 
-8) Should the WGL/GLX functions accept a source context as well as a
+  8) Should the WGL/GLX functions accept a source context as well as a
    destination context?
 
     Resolved.

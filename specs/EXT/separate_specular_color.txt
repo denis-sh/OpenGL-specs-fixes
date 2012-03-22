@@ -58,8 +58,8 @@ Issues
     terms.  Grouping emissive with specular (the "proper" thing) could 
     be implemented with a new value for the color control.
 
-* Should there be two colors when not lighting or with index 
-  lighting?
+  * Should there be two colors when not lighting or with index 
+    lighting?
 
     RESOLVED - The answer is probably yes--there should be two colors 
     when lighting is disabled and there could be an incorporation of 

@@ -48,7 +48,7 @@ IP Status
 
 Issues
 
-*   Should this be generalized for other commands: DrawPixels, TexImage?
+  * Should this be generalized for other commands: DrawPixels, TexImage?
 
     Resolved: No need to aggrandize.
 

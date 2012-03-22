@@ -488,13 +488,13 @@ Sample Code
 
 Issues
 
-1) Does this belong conceptually in the pipe as subsuming geometry
+  1) Does this belong conceptually in the pipe as subsuming geometry
    shader (after primitive combine) or vertex unpack.
 
    Vertex unpack.  Even though there is "primitive information" it
    is limited to the immediate neighborhood.
 
-2) Do we need a new stage?
+  2) Do we need a new stage?
 
    If we add a "tessellation" stage:
 
@@ -513,12 +513,12 @@ Issues
    No.  We'll just make the attributes undefined, and the
    "vertex unpack" stage naturally collapses into the vertex shader.
 
-3) Why make attributes undefined but writable?
+  3) Why make attributes undefined but writable?
 
    This is the easiest way to have an unpack shader merged into
    existing shaders.
 
-4) What variants of vertexFetch do we need.
+  4) What variants of vertexFetch do we need.
 
    1D is probably all we need, and probably all we will ever need.
    The return types should be vec4, ivec4 and uvec4.
@@ -528,7 +528,7 @@ Issues
    ivec4 vertexFetchAMD( __isamplerVertexAMD sampler, int i );
    uvec4 vertexFetchAMD( __usamplerVertexAMD sampler, int i );
 
-5) How does __samplerVertexAMD and vertexFetchAMD interact with vertex arrays?
+  5) How does __samplerVertexAMD and vertexFetchAMD interact with vertex arrays?
 
    The __samplerVertexAMD becomes an active uniform.  As existing
    samplers are bound to texture units, the samplerVertex is bound to a
@@ -545,12 +545,12 @@ Issues
      VertexAttrib[size][type]v
        (j, generic vertex attribute j array element i);
 
-6) What happens if a buffer object is not bound to an array?
+  6) What happens if a buffer object is not bound to an array?
 
     There is no reason why it shouldn't work, but there's also no good
     reason to make it work.  Undefined.
 
-7) What about "conventional" OpenGL array state (Vertex, Color, Normal,
+  7) What about "conventional" OpenGL array state (Vertex, Color, Normal,
    TexCoord, etc....)?
 
    By binding the buffer objects to the appropriate vertexAttrib array,
@@ -558,18 +558,18 @@ Issues
    application programmer can access all "conventional" OpenGL array
    state?
 
-8) Are attributes declared or used in the shader "active?"
+  8) Are attributes declared or used in the shader "active?"
 
     For the purposes of GetActiveAttrib, GetAttribLocation and
     BindAttribLocation, no.
 
-9) What about geometry shaders and tessellation?
+  9) What about geometry shaders and tessellation?
 
     Future hardware may relax this restriction, but you can not
     successfully link a program that includes a vertex shader that has
     enabled GL_AMD_vertex_shader_tessellator and a geometry shader.
 
-10) What draw calls do we support?
+  10) What draw calls do we support?
 
     To the shader writer, everything looks like indexed triangles or
     indexed quads, with discrete and continuous tessellation.   These
@@ -582,18 +582,18 @@ Issues
     Points, Lines and pixel rectangles and bitmaps are unsupported by
     a tessellation shader.
 
-11) Do we need additional enables?
+  11) Do we need additional enables?
 
     Lets first see how "implicit" enable of vertex arrays and
     tessellation draw calls works. The first follows precedent (samplers
     override texture enable hierarchy.)  The second seems to follow.
 
-11) What about begin errors?
+  12) What about begin errors?
 
     They are evil, but I don't see how they can be avoided.
     Clearly sampler validation needs to follow precedent.
 
-12) What about quads?
+  13) What about quads?
 
     Quads are necessary for subdivision surfaces such as Catmull-Clark.
     We have received several significant requests to support subdivision

@@ -429,25 +429,25 @@ Interactions with WGL_ARB_create_context
 
 Issues
 
-1. Is a different DC necessary in addition to an associated context?
+  1. Is a different DC necessary in addition to an associated context?
    
    - Resolved. It seems unnecessary. An associated DC would be a virtual 
    DC with no real meaning. Using an associated DC would require apps to 
    create windows and set pixelformats that are meaningless.
 
-2. Should the list of IDs returned by wglGetGPUIDs be ordered in some 
+  2. Should the list of IDs returned by wglGetGPUIDs be ordered in some 
    way? By fastest GPU?
    
    - Resolved. There is no need to create a restriction. The GPU info can 
    be queried.
    
-3. What happens when the GPUs support different versions of OpenGL?
+  3. What happens when the GPUs support different versions of OpenGL?
    Do we allow this? Do we need the 
    
    - Resolved. It is the applications responsibility to use each GPU 
    appropriately based on the supported version of OpenGL.
    
-4. What should the relation between wglMakeAssociatedContextCurrentAMD and 
+  4. What should the relation between wglMakeAssociatedContextCurrentAMD and 
    wglMakeCurrent be? Should it be legal to have an associated context and a 
    normal context current to the same thread?
    
@@ -455,20 +455,20 @@ Issues
    one both current, but for simplicity, only one of any type will be allowed 
    per thead.
    
-5.  Will a call to wglShareLists with contexts that were not created through
+  5.  Will a call to wglShareLists with contexts that were not created through
     wglCreateContext make it through to the driver? If not, will a new 
     shareLists call be necessary?   
     
     -Resolved. This is not an issue.
 
-6.  Is GPUClock a good parameter for the GPUInfo structure? How should 
+  6.  Is GPUClock a good parameter for the GPUInfo structure? How should 
     relative GPU performance be presented?
     
     - Resolved. This is sufficent. One alternative would be to test execution of 
     some amount of geometry rendering. But applications are better positioned
     to perform this based on their rendering needs.
 
-7.  Is BlitContextFramebufferEXT the best way to transfer data from one 
+  7.  Is BlitContextFramebufferEXT the best way to transfer data from one 
     context to another? Or would it be better to create a read and write
     context bind point?
     
@@ -478,7 +478,7 @@ Issues
     introduce mutability issues when multiple threads are being used. 
     Only one thread could use the interface at a time. 
 
-8.  Should the GPU ID be part of the pixel format? That would allow 
+  8.  Should the GPU ID be part of the pixel format? That would allow 
     apps to search for a format that worked on different GPUs. 
     
     - Resolved. Using the pixel format would provide a non-intrusive solution,
@@ -486,12 +486,12 @@ Issues
     current interfaces. In addition, the app would have to create a 
     dummy window.
 
-9.  Are there any problems calling wglShareLists with contexts not created
+  9.  Are there any problems calling wglShareLists with contexts not created
     by Windows?
     
     - Resolved. This is not an issue.
 
-10. What should happen in an associated context when the default FBO is 
+  10. What should happen in an associated context when the default FBO is 
     bound? The 2 options seem to be 1. Throw an error and do not render,
     2. Discard all rendering as failing the pixel ownership test.
     

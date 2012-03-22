@@ -44,7 +44,7 @@ IP Status
 
 Issues
 
-*   An alternative is to suggest platforms define GLfloat and
+  * An alternative is to suggest platforms define GLfloat and
     GLdouble to be the same type, since it is unlikely that both
     single- and double-precision are required at the same time.
 

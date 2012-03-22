@@ -908,7 +908,7 @@ Sample Code
 
 Issues
 
-1 -  Do we need an indirection table between the counters and the shaders?
+  1 -  Do we need an indirection table between the counters and the shaders?
      (Similar to Samplers?  VertexAttribBinding?  Uniform blocks?)
 
      Yes.  This draft introduces opaque counters similar to samplers.
@@ -920,21 +920,21 @@ Issues
      used to retrieve the names of the counters, and their
      bindings, and other useful information.
 
-2 -  What shader stages are these available in?
+  2 -  What shader stages are these available in?
 
      Resolved.  All stages.
 
-3 -  Can the counters be operated on in the shading language?
+  3 -  Can the counters be operated on in the shading language?
 
      Resolved:  Not directly.  But indirectly, probably not in
      any meaningful way.  But there are no restrictions placed on the
      values once they are returned to the shader.
 
-4 -  Where's issue 4?
+  4 -  Where's issue 4?
 
      Resolved.  It's here.
 
-5 - Can a single shader both increment and decrement an individual atomic
+  5 - Can a single shader both increment and decrement an individual atomic
     counter?
 
      Resolved:  Yes, with caveats.  In order to provide a global unique
@@ -947,18 +947,18 @@ Issues
      provide policy - there's little reason for the compiler to be involved
      in enforcing.
 
-6 - Can multiple shaders in a program both increment and decrement an
+  6 - Can multiple shaders in a program both increment and decrement an
     individual atomic counter?
 
      Resolved.  Yes, with the same caveats as above.
 
-7 -  Is there a maximum maximum number of counters?
+  7 -  Is there a maximum maximum number of counters?
 
      Resolved.  No, implementations are free to support arbitrarily many
      counters.  Implementations may set their own limits, though there are
      specified minimum limits.
 
-8 -  Can a counter be queried, but not incremented/decremented in the shader?
+  8 -  Can a counter be queried, but not incremented/decremented in the shader?
 
      Resolved:  Yes.  (It's an increment of zero.  Or a decrement of zero.)
      Note that using a get without an increment or decrement will return
@@ -966,48 +966,48 @@ Issues
 
      Again, we provide mechanism, not policy.
 
-9 -  Can a counter be incremented/decremented by an arbitrary amount?
+  9 -  Can a counter be incremented/decremented by an arbitrary amount?
 
      Resolved:  No.  Only by 1.  (Or 0.)
 
-10 - Should append counters wrap on zero and overflow?
+  10 - Should append counters wrap on zero and overflow?
 
      Resolved:  Wrap.  [0,2^32-1]
 
-11 - What piece of state owns the atomic counters?
+  11 - What piece of state owns the atomic counters?
 
      Resolved:  There is no context state, they must be backed
      by buffer objects.
 
-12 - Can the atomic counters be shared between contexts?
+  12 - Can the atomic counters be shared between contexts?
 
      Resolved:  Not directly, but they may be shared indirectly by sharing the
      buffer objects that back them.
 
-13 - Should we be able to write atomic counters to a buffer object?
+  13 - Should we be able to write atomic counters to a buffer object?
 
      Resolved.  Yes.  (Note that buffer objects can be shared.
      The result of updating atomic counters in multiple contexts
      backed with the same buffer object is undefined.)
 
-14 - If indexing an array of atomic_uints, can the index used diverge
+  14 - If indexing an array of atomic_uints, can the index used diverge
      in a SIMD implementation?
 
      Resolved.  No.  They must be dynamically uniform, similar
      to samplers.
 
-15 - Should we provide "append buffer" functionality?
+  15 - Should we provide "append buffer" functionality?
 
      Resolved:  Yes, but by providing access to atomic counters.
      This provides the mechanism to do "append buffer" functionality,
      and more.
 
-16 - What should this extension be called?
+  16 - What should this extension be called?
 
      Resolved:  ARB_shader_atomic_counters.  It's primarily a shader
      extension, and it provides atomic_counters.
     
-17 - What happens to shared buffer objects that are updated in
+  17 - What happens to shared buffer objects that are updated in
      more than one context by data-setting commands, including
      the built-in atomic counter functions?
 
@@ -1018,20 +1018,20 @@ Issues
      atomic in a single context, but there is no guarantee that
      they are atomic across contexts.
 
-18 - Should there be one buffer binding for all counters, or a
+  18 - Should there be one buffer binding for all counters, or a
      buffer binding per counter.
 
      Resolved.  There should be a buffer binding (and offset)
      per counter.  Shaders may store multiple atomic counters in
      a single buffer binding.
 
-19 - What about simultaneous use of buffer object at two 
+  19 - What about simultaneous use of buffer object at two 
      binding points, where one is an atomic counter binding point?
 
      Resolved.  We are going to be conservative and make
      such use undefined.
 
-20 - Does atomic_uint type add any value?
+  20 - Does atomic_uint type add any value?
 
      Resolved.  Yes.  For a single program text, the opaque
      atomic_uint is just syntactic sugar.
@@ -1045,7 +1045,7 @@ Issues
      Also, when we do add api (not yet added) to query active
      atomic_uints in a shader, this provides additional benefits.
 
-21 - Do we need api to query the atomic counter?
+  21 - Do we need api to query the atomic counter?
 
      Resolved.  Earlier drafts had a traditional indexed get,
      which would be useful for debugging but not high performance.
@@ -1059,7 +1059,7 @@ Issues
      be used for high performance client side (cpu) access
      to atomic counters.
 
-22 - Does AtomicCounter reset to zero:
+  22 - Does AtomicCounter reset to zero:
      The context default counter state?
      The value in a buffer object bound to a counter?
      Both?
@@ -1067,35 +1067,35 @@ Issues
      Resolved.  THERE IS NO DEFAULT CONTEXT STATE, only the
      buffer object bound, if any, is set.
 
-23 - Does a BufferData to a buffer bound to counter set the value of:
+  23 - Does a BufferData to a buffer bound to counter set the value of:
      The buffer object?  (Obviously)
      The context default counter state bound that that buffer?
 
      Resolved.  THERE IS NO DEFAULT CONTEXT STATE.
 
-24 - Do we want an error (or undefined behavior) that says you
+  24 - Do we want an error (or undefined behavior) that says you
      can't draw while a mapped buffer is bound to one of these
      counters?
 
      Resolved.  Undefined.
 
-25 - Is a atomic_uint an "in" or a "uniform"?
+  25 - Is a atomic_uint an "in" or a "uniform"?
 
      Resolved.  "atomic_uint" variables are declared as uniforms at global
      scope.
 
-26 - Can the active atomic counters for one program be stored in more than one
+  26 - Can the active atomic counters for one program be stored in more than one
      buffer object?
 
      Resolved.  Yes.
 
-27 - Can atomic counters be grouped into blocks similar to uniform blocks?
+  27 - Can atomic counters be grouped into blocks similar to uniform blocks?
 
      Resolved.  No.  However, layout qualifiers can be used in individual
      declarations to identify a specific buffer binding point and offset to
      use for the counter.
 
-28 - What API should be used to query information about atomic counters?
+  28 - What API should be used to query information about atomic counters?
 
      Resolved.  GetActiveUniformsiv.  Apart from the common type and count
      queries, UNIFORM_OFFSET can be used to query the offset of an atomic
@@ -1110,7 +1110,7 @@ Issues
      GetAtomicCounterBufferiv to query the ATOMIC_COUNTER_BUFFER_BINDING for
      the returned index.
 
-29 - What API should we provide to query information about buffer object
+  29 - What API should we provide to query information about buffer object
      storage needed to back atomic counters?
 
      Unresolved.  We will provide an API for querying information about
@@ -1141,7 +1141,7 @@ Issues
      returned by calling GetActiveAtomicCounterBufferiv with a <pname> of
      ATOMIC_COUNTER_BUFFER_BINDING, will be 0, 3, 6, and 7, respectively.
 
-30 - The function atomicCounterIncrement() returns the value of the counter
+  30 - The function atomicCounterIncrement() returns the value of the counter
      prior to incrementing while atomicCounterDecrement() returns the value
      of the counter *after* decrementing.  Is this intentional?
 
@@ -1156,7 +1156,7 @@ Issues
      <N>-1, but also return the decremented index of <N>-1, which was the
      index of the last record in the buffer prior to the decrement.
 
-31 - What alignment requirements apply to the <offset> and <size> parameters
+  31 - What alignment requirements apply to the <offset> and <size> parameters
      of BindBufferRange when binding atomic counter buffers?
 
      Resolved.  <offset> must be a multiple of four.  <size> has no required

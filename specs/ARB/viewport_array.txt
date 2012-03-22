@@ -671,79 +671,79 @@ Issues
 
        FEEDBACK FROM PAT:
 
-This discussion is technically incorrect -- the viewport
-transformation technically does *NOT* include any clipping.  However, for
-geometric primitives, the viewport transformation is applied to vertices
-post-clipping (despite the fact that it precedes clipping in the spec), so
-there is some clipping in the vicinity of the viewport transformation.
+        This discussion is technically incorrect -- the viewport
+        transformation technically does *NOT* include any clipping.  However, for
+        geometric primitives, the viewport transformation is applied to vertices
+        post-clipping (despite the fact that it precedes clipping in the spec), so
+        there is some clipping in the vicinity of the viewport transformation.
 
-"Guardband clipping" is an alternate implementation, producing nearly
-equivalent results to those specified by OpenGL.  When using guardband
-clipping, primitives are not clipped tightly to the view volume in X/Y:
+        "Guardband clipping" is an alternate implementation, producing nearly
+        equivalent results to those specified by OpenGL.  When using guardband
+        clipping, primitives are not clipped tightly to the view volume in X/Y:
 
-  -w <= x <= w
-  -w <= y <= w
+          -w <= x <= w
+          -w <= y <= w
 
-Instead, looser (or no) clipping is applied, for example:
+        Instead, looser (or no) clipping is applied, for example:
 
-  -8w <= x <= 8w
-  -8w <= y <= 8w
+          -8w <= x <= 8w
+          -8w <= y <= 8w
 
-Since primitives are clipped far less aggressively, something has to be done
-to produce results similar to those with aggressive clipping.  To do this,
-such implementations will enable per-pixel scissoring to the viewport
-rectangle.
+        Since primitives are clipped far less aggressively, something has to be done
+        to produce results similar to those with aggressive clipping.  To do this,
+        such implementations will enable per-pixel scissoring to the viewport
+        rectangle.
 
-There are several areas of difference that implementations using guardband
-clipping need to deal with (or ignore):
+        There are several areas of difference that implementations using guardband
+        clipping need to deal with (or ignore):
 
-* line- and point-mode polygons:  The OpenGL spec says that lines should be
-  drawn along the edges of polygons clipped to the frustum.  If you don't clip
-  tightly, you can't draw those edges.  (NOTE:  The behavior specified by
-  OpenGL ends up being somewhat shitty.  Let's say you have a line-mode
-  primitive clipped by both the left and right side of the frustum, which
-  implies that you should have vertical edges on the left and right side of
-  the viewport.  With integer viewport coordinates, both edges will be exactly
-  between pixel centers.  In practice, implementations' tiebreaking rules will
-  have either the left or right edge light up pixels outside the viewport.  If
-  the viewport is the full window, this means that one of those lines won't be
-  visible.
+        * line- and point-mode polygons:  The OpenGL spec says that lines should be
+          drawn along the edges of polygons clipped to the frustum.  If you don't clip
+          tightly, you can't draw those edges.  (NOTE:  The behavior specified by
+          OpenGL ends up being somewhat shitty.  Let's say you have a line-mode
+          primitive clipped by both the left and right side of the frustum, which
+          implies that you should have vertical edges on the left and right side of
+          the viewport.  With integer viewport coordinates, both edges will be exactly
+          between pixel centers.  In practice, implementations' tiebreaking rules will
+          have either the left or right edge light up pixels outside the viewport.  If
+          the viewport is the full window, this means that one of those lines won't be
+          visible.
 
-* wide points and lines:  According to the OpenGL spec, line or point
-  primitives on or near the edge of the viewport should technically extend
-  outside the viewport.  For example, a four-pixel point on the left edge of
-  the viewport should light up eight pixels (2x4) outside the left edge of the
-  viewport.  The scissoring used for guardband clipping will discard those
-  pixels.  In my opinion, the scissored results are preferable to those called
-  for by the spec.  Of course, with the OpenGL spec behavior, there are no
-  visible artifacts if:  (a) the viewport covers the entire window or (b) the
-  application scissors manually itself.
+        * wide points and lines:  According to the OpenGL spec, line or point
+          primitives on or near the edge of the viewport should technically extend
+          outside the viewport.  For example, a four-pixel point on the left edge of
+          the viewport should light up eight pixels (2x4) outside the left edge of the
+          viewport.  The scissoring used for guardband clipping will discard those
+          pixels.  In my opinion, the scissored results are preferable to those called
+          for by the spec.  Of course, with the OpenGL spec behavior, there are no
+          visible artifacts if:  (a) the viewport covers the entire window or (b) the
+          application scissors manually itself.
 
-Fractional viewports make things more complicated, particularly if the
-implementation doesn't scissor at a per-sample granularity.  In this case,
-tight view volume clipping will result in primitives that are fully contained
-within the fractional viewport (to the limits of clipping math, at least).
-Guardband clipping will have primitives that extend beyond the viewport and
-probably cover full pixels at the boundary of the viewport.  (This discussion
-assumes that a guardband implementation with fractional viewports extends its
-viewport clip to pass on pixels containing any fraction of the floating-point
-viewport.)
+        Fractional viewports make things more complicated, particularly if the
+        implementation doesn't scissor at a per-sample granularity.  In this case,
+        tight view volume clipping will result in primitives that are fully contained
+        within the fractional viewport (to the limits of clipping math, at least).
+        Guardband clipping will have primitives that extend beyond the viewport and
+        probably cover full pixels at the boundary of the viewport.  (This discussion
+        assumes that a guardband implementation with fractional viewports extends its
+        viewport clip to pass on pixels containing any fraction of the floating-point
+        viewport.)
 
-Direct3D 11 specifies that rasterization along the one-pixel edges of
-fractional viewports to be undefined.  If implementations want defined
-behavior with fractional viewports, they can program a slightly wider viewport
-and scissor away the pixels along the edge of the expanded viewport.
+        Direct3D 11 specifies that rasterization along the one-pixel edges of
+        fractional viewports to be undefined.  If implementations want defined
+        behavior with fractional viewports, they can program a slightly wider viewport
+        and scissor away the pixels along the edge of the expanded viewport.
 
-My recommendation is as follows:
+        My recommendation is as follows:
 
-(1) Edit the clipping section of the spec to explicitly permit implementations
-to clip to larger view volume extents in (x,y) and instead scissor to the
-viewport rectangle.  Note that this scissor rectangle needs to either be
-separate from the API-level scissor rectangle, or intersected with it.  This
-scissoring would always have to be enabled, regardless of the SCISSOR enabled.
+        (1) Edit the clipping section of the spec to explicitly permit implementations
+        to clip to larger view volume extents in (x,y) and instead scissor to the
+        viewport rectangle.  Note that this scissor rectangle needs to either be
+        separate from the API-level scissor rectangle, or intersected with it.  This
+        scissoring would always have to be enabled, regardless of the SCISSOR enabled.
 
-(2) Edit the viewport section of the spec to briefly discuss the implications
-of fractional viewports on the newly permitted scissoring.
+        (2) Edit the viewport section of the spec to briefly discuss the implications
+        of fractional viewports on the newly permitted scissoring.
 
     7) What is the VIEWPORT_SUBPIXEL_BITS implementation defined value for?
 

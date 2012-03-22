@@ -170,14 +170,14 @@ Changes to Section 8.3 Common Functions
 
 Issues
 
-1.  Operations like fma(), pow(), etc. might not be as precise as specified.  To 
-keep backward compatibility, this implies vendors finding out what precisions they do 
-have.  Possibly also either new built-ins or modes are needed to access 
-hardware's ability to deliver the more precise versions of what is found.
+    1.  Operations like fma(), pow(), etc. might not be as precise as specified.  To 
+    keep backward compatibility, this implies vendors finding out what precisions they do 
+    have.  Possibly also either new built-ins or modes are needed to access 
+    hardware's ability to deliver the more precise versions of what is found.
 
-2.  The specification is currently lacking in edge case behavior.  How much of this 
-should refer to existing IEEE and language specifications versus be reproduced 
-here?
+    2.  The specification is currently lacking in edge case behavior.  How much of this 
+    should refer to existing IEEE and language specifications versus be reproduced 
+    here?
 
 Revision History
 

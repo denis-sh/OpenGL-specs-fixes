@@ -52,17 +52,17 @@ IP Status
 
 Issues
 
-*   Add double-precision (S31.32) form too?
+  * Add double-precision (S31.32) form too?
       NO
-
-*   Additional InterleavedArray formats?
+  
+  * Additional InterleavedArray formats?
       NO
-
-*   Should newly suffixed commands, e.g., PointSize, get an alias with
+  
+  * Should newly suffixed commands, e.g., PointSize, get an alias with
     a float or double suffix for consistency?
       NO
-
-*   Are enums converted to fixed by scaling by 2^16.
+  
+  * Are enums converted to fixed by scaling by 2^16.
       NO.  An enums are passed through as if they are already in
       S15.16 form.  Requiring scaling is too error prone.
 

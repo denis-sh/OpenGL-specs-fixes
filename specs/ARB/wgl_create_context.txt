@@ -377,7 +377,7 @@ Sample Code
 
 Issues
 
- 1) Can different GL context versions share data?
+   1) Can different GL context versions share data?
 
     PROPOSED: Yes, with restrictions as defined by the supported feature
     sets. For example, program and shader objects cannot be shared with
@@ -389,12 +389,12 @@ Issues
     parameter to it were to be a context supporting the new object
     model.
 
- 2) Should we introduce a token WGL_NONE to terminate attribute lists,
+   2) Should we introduce a token WGL_NONE to terminate attribute lists,
     instead of using the value 0, by analogy to GLX and EGL?
 
     RESOLVED: No.
 
- 3) Should all GL context versions be able to bind to all the same pixel
+   3) Should all GL context versions be able to bind to all the same pixel
     formats?
 
     RESOLVED: unlike EGL, we don't expose the version restriction in the
@@ -405,7 +405,7 @@ Issues
     object model, such an API probably could not bind to pbuffer
     surfaces.
 
- 4) Should there be a way to make a context current without binding
+   4) Should there be a way to make a context current without binding
     it to a window system drawable at the same time?
 
     RESOLVED: Yes, but only in OpenGL 3.0 and later. This results in a
@@ -416,7 +416,7 @@ Issues
     argument to identify the namespace of the driver, so we may not be
     able to work around it.
 
- 5) Should we add a token to the attrib list for pixel format selection
+   5) Should we add a token to the attrib list for pixel format selection
     to indicate the GL context version, instead of introducing a new
     entry point for context creation?
 
@@ -426,7 +426,7 @@ Issues
     contexts. This is important for code migration and backward
     compatibility.
 
- 6) Do we need a "can be shared" parameter at context creation time?
+   6) Do we need a "can be shared" parameter at context creation time?
 
     RESOLVED: No. All contexts have potential to share objects (whether
     they actually can share depends on context version and feature sets,
@@ -434,7 +434,7 @@ Issues
     context cannot share objects are unclear but probably minimal. Such
     a parameter would default to TRUE if it existed.
 
- 7) How are "debug contexts" created?
+   7) How are "debug contexts" created?
 
     RESOLVED: by specifying the WGL_CONTEXT_DEBUG_BIT_ARB flag in the
     WGL_CONTEXT_FLAGS_ARB attribute value.
@@ -446,19 +446,19 @@ Issues
     completely separate driver path. So it's essential to know at
     context creation time if a debug context is required.
 
- 8) Is wglCreateContextVersion a good name?
+   8) Is wglCreateContextVersion a good name?
 
     Ian Romanick suggests wglCreateContextAttribs instead. Changed in
     version 12.
 
- 9) Should the context version be named with separate major and minor
+   9) Should the context version be named with separate major and minor
     number attributes, or as a single (major*100 + minor*10) number as
     in GLSL (e.g. version == 220 <-> major = 2, minor = 2)?
 
     John Kessenich argues for consistency with the existing GLSL naming
     scheme.
 
-10) How are profiles specified? Why is the profile attribute a bitmask
+  10) How are profiles specified? Why is the profile attribute a bitmask
     rather than an enum?
 
     RESOLVED: Profiles are specified as individual bits passed in a
@@ -470,7 +470,7 @@ Issues
     able to specify multiple profiles at context creation and in the GL
     context profile query, for which a bitmask is appropriate.
 
-11) Why is the value of WGL_CONTEXT_PROFILE_MASK_ARB in the GL
+  11) Why is the value of WGL_CONTEXT_PROFILE_MASK_ARB in the GL
     core enumerant range?
 
     RESOLVED: The token value for the context profile mask and for the
@@ -478,13 +478,13 @@ Issues
     implementation and reduce programming errors. These values are drawn
     from the GL token ranges.
 
-12) What errors can result from requesting a profile?
+  12) What errors can result from requesting a profile?
 
     RESOLVED: Only a single profile can currently be requested.
     Requesting no profile, more than one profile, or an unrecognized
     profile are all errors.
 
-13) How does the profile request interact with older GL versions?
+  13) How does the profile request interact with older GL versions?
 
     RESOLVED: It does not. The profile mask is ignored unless the
     requested GL version is >= 3.2.
@@ -498,7 +498,7 @@ Issues
     which implement GL_ARB_compatibility by default when an OpenGL 3.1
     context is requested.
 
-14) How does the profile request interact with the forward compatibility
+  14) How does the profile request interact with the forward compatibility
     bit?
 
     RESOLVED: Nothing special need be done here. If the forward
@@ -511,7 +511,7 @@ Issues
     of features - wide lines and two queries - deprecated from core
     OpenGL 3.2).
 
-15) How is context sharing between contexts of different versions
+  15) How is context sharing between contexts of different versions
     handled?
 
     RESOLVED: It's up to the implementation whether or not to allow
@@ -520,7 +520,7 @@ Issues
     example, textures with nonzero width borders shared by 3.2 core and
     compatibility profile contexts).
 
-16) Is the GL_ARB_compatibility extension equivalent to the
+  16) Is the GL_ARB_compatibility extension equivalent to the
     compatibility profile?
 
     RESOLVED: No. The extension refers specifically to functionality
@@ -534,7 +534,7 @@ Issues
     3.2 or greater may (and probably will) choose to export
     GL_ARB_compatibility, but this is not required.
 
-17) If the core profile is requested, what additional functionality
+  17) If the core profile is requested, what additional functionality
     can be provided?
 
     RESOLVED: Functionality defined only by the compatibility profile

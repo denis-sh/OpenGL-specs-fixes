@@ -85,36 +85,36 @@ IP Status
 
 Issues 
 
- 1. Should we support 3D textures? What about 1D textures? 
+   1. Should we support 3D textures? What about 1D textures? 
 
     3D textures - No. This adds a lot of implementation burden without 
     having a good usage model.
 
     1D textures - Yes. Just a special case of 2D texture.
 
- 2. Should we allow a portion of the color buffer to be used as a texture? 
+   2. Should we allow a portion of the color buffer to be used as a texture? 
     No, if a different size texture is needed the application can just 
     create another pbuffer. 
 
- 3. Do we need the MIPMAP_TEXTURE attribute? 
+   3. Do we need the MIPMAP_TEXTURE attribute? 
 
     Yes this is good to have since some architectures may require all or 
     some of the mipmaps to be stored together in memory. 
 
- 4. Should we require power of 2 textures? 
+   4. Should we require power of 2 textures? 
 
     Yes, we will allow an implementation to fail if the texture size is 
     not a power of 2. This restriction can be relaxed later by the
     exension that allows non-power of 2 texture.
 
- 5. Should the render texture attributes be per color buffer or per drawable? 
+   5. Should the render texture attributes be per color buffer or per drawable? 
 
     There really isn't a mechanism for associating attributes with the color
     buffer. Also, allowing different render texture attributes for each 
     color buffer makes the extension more difficult to implement without 
     providing a very useful tool for applications. 
 
- 6. What should happen if the color buffer is used for rendering before it 
+   6. What should happen if the color buffer is used for rendering before it 
     is released from the texture? 
 
     There are three reasonable options: generate an error, create another 
@@ -128,17 +128,17 @@ Issues
     not the context.. (Also the texture object that contains the 
     color buffer's image may be released from the current context). 
 
- 7. Should the new pbuffer attributes be available through GL queries? 
+   7. Should the new pbuffer attributes be available through GL queries? 
 
     No, like other pbuffer attributes you need to query them through the 
     window system extension. This extension does not make any changes to 
     OpenGL. 
 
- 8. Should we allow a subset of mipmaps to be defined? 
+   8. Should we allow a subset of mipmaps to be defined? 
 
     No. 
 
- 9. What happens when a pbuffer is bound as a texture and then a mode 
+   9. What happens when a pbuffer is bound as a texture and then a mode 
     change occurs and the pbuffer is lost? 
 
     The texture is not lost in this case. OpenGL doesn't have the notion 
@@ -147,7 +147,7 @@ Issues
     is bound to a texture, it must be saved and restored by the driver, 
     whenever texture memory is lost (even on a windows mode change). 
 
-10. Should there be any restrictions on the texture operations that 
+  10. Should there be any restrictions on the texture operations that 
     can be performed on a color buffer? 
 
     Yes. We allow TexSubImage and CopyTexSubImage calls but disallow 
@@ -169,12 +169,12 @@ Issues
     like an explicit release - i.e. the color buffer is available for
     rendering without the app having to call ReleaseTexImage.
     
-11. When the color buffer is released from the texture (back to the pbuffer)
+  11. When the color buffer is released from the texture (back to the pbuffer)
     should the contents be preserved? 
 
     No, this may prove difficult to implement on some architectures. 
 
-12. Should releasing the color buffer from the texture (back to the pbuffer)
+  12. Should releasing the color buffer from the texture (back to the pbuffer)
     affect the scissor or viewport? 
 
     No, since releasing the color buffer, does not change its size, it 
@@ -184,28 +184,28 @@ Issues
     where the application is responsible for updating the scissor and 
     viewport).
 
-13. How should swap buffers work when a color buffer is bound as a texture? 
+  13. How should swap buffers work when a color buffer is bound as a texture? 
 
     Since a color buffer (not a pbuffer) is bound to a texture, swap buffers
     should be a no-op. Otherwise the name of the bound buffer (FRONT, BACK) 
     will change while it is bound. Note that swap buffers works just as
     for a pbuffer when the color buffer is not bound as a texture.
 
-14. What happens when the application binds one color buffer of a pbuffer 
+  14. What happens when the application binds one color buffer of a pbuffer 
     to a texture and then tries to render to another color buffer of the 
     pbuffer? 
 
     If any of the pbuffer's color buffers are bound to a texture, then 
     rendering results are undefined for all color buffers of the pbuffer. 
 
-15. Should it be an error to bind a color buffer of a pbuffer to a 
+  15. Should it be an error to bind a color buffer of a pbuffer to a 
     texture, if that pbuffer is current to another thread? 
 
     No. It is not an error to make a drawable current to two threads right 
     now. Read and draw operations produce indeterminate results when the 
     pbuffer is bound to a texture. 
 
-16. Should we allow color buffers of all drawables (pbuffers and windows)
+  16. Should we allow color buffers of all drawables (pbuffers and windows)
     to be bound to textures? 
 
     For now we just allow pbuffers. This is simpler since they are not 
@@ -213,7 +213,7 @@ Issues
     visible framebuffer. Also, windows can be resized at any time and 
     handling this resize would unnecessarily complicate this extension. 
 
-17. Should we allow depth buffers to be bound as textures? 
+  17. Should we allow depth buffers to be bound as textures? 
 
     This extension does not provide for this but it would be an interesting 
     additional extension. When a color buffer is bound to a texture, only 
@@ -223,12 +223,12 @@ Issues
     This extension is written such that adding depth textures should
     be very easy.
 
-18. What happens when a color buffer is bound to a shared texture object? 
+  18. What happens when a color buffer is bound to a shared texture object? 
 
     Since the color buffer is associated with the texture object itself, 
     it should be shared. 
 
-19. Should we specify how this extension interacts with SGIS_generate_mipmap? 
+  19. Should we specify how this extension interacts with SGIS_generate_mipmap? 
 
     No, since this is a potential ARB extension and SGIS_generate_mipmap 
     is not. If SGIS_generate_mipmap is supported along with this extension,
@@ -237,13 +237,13 @@ Issues
     generated. This behaviour needs to be documented in the 
     SGIS_generate_mipmap (or equivalent) extension. 
 
-20. Should we support borders on render textures? 
+  20. Should we support borders on render textures? 
 
     No. Although borders are part of 1.2.1, they are often not supported 
     and better techniques (such as virtual textures) are starting to 
     become available for paging in large textures. 
 
-21. Should wglBindTexImageARB take an attribute indicating whether 
+  21. Should wglBindTexImageARB take an attribute indicating whether 
     mipmaps are defined or should this be implied from the 
     WGL_MIPMAP_TEXTURE_ARB attribute of the pbuffer? 
 
@@ -252,7 +252,7 @@ Issues
     image even if the pbuffer has been defined large enough to
     store mipmaps.
 
-22. This extension introduces pbuffer attributes that can be modified. 
+  22. This extension introduces pbuffer attributes that can be modified. 
     (Previously all pbuffer attributes were static and could not be 
     changed.) Should we allow the non-static attributes to be set when the 
     pbuffer is created or should we require the application to call 
@@ -262,7 +262,7 @@ Issues
     non-static Pbuffer attributes since this seems to be more consistent 
     with OpenGL specification.
 
-23. Do we need WGL_TEXTURE_FORMAT_ARB or is WGL_ALPHA_BITS_ARB enough
+  23. Do we need WGL_TEXTURE_FORMAT_ARB or is WGL_ALPHA_BITS_ARB enough
     to distinguish between selecting RGB vs. RGBA textures? Additionally,
     how is this parameter defined for non texture buffers.
 
@@ -272,7 +272,7 @@ Issues
     specification. This parameter is defined as WGL_NO_TEXTURE_ARB for
     non texture buffers.
 
-24. Should luminance and Intensity texture formats be allowed?
+  24. Should luminance and Intensity texture formats be allowed?
 
     No. WGL doesn't support single-channel framebuffer formats. Allowing
     these formats would require a copy to reformat a RGB/RGBA framebuffer
