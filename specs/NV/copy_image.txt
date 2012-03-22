@@ -132,7 +132,6 @@ Operations and the Frame Buffer)
     and the dimensions of the subregion fail to meet the alignment
     constraints of the format.
 
-************************************************************************
 
 Additions to the WGL Specification
 

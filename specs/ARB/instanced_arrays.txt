@@ -393,7 +393,6 @@ Requests)
     In section 6.1.14, add to the list of pnames accepted by
     GetVertexAttrib*v: VERTEX_ATTRIB_ARRAY_DIVISOR_ARB
 
-************************************************************************
 
 Additions to the AGL/EGL/GLX/WGL Specifications
 
