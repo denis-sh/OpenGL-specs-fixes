@@ -282,7 +282,6 @@ New Tokens
     
         INVALID_INDEX                                   0xFFFFFFFFu
 
-2.1 Specification Updates
 
 Additions to Chapter 2 - OpenGL Operation
 
