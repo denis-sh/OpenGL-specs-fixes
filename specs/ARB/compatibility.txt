@@ -14,8 +14,10 @@ Number
 
     ARB Extension #58
 
-NOTE: Due to its size and complexity, this extension does not have its
-own specification document. Instead, a forked version of the OpenGL 3.1
-Specification including GL_ARB_compatibility language is downloadable
-from the OpenGL Extension Registry at http://www.opengl.org/registry/.
-Please refer to that specification for more information.
+Overview
+
+    NOTE: Due to its size and complexity, this extension does not have its
+    own specification document. Instead, a forked version of the OpenGL 3.1
+    Specification including GL_ARB_compatibility language is downloadable
+    from the OpenGL Extension Registry at http://www.opengl.org/registry/.
+    Please refer to that specification for more information.
