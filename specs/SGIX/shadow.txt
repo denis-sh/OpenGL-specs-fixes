@@ -146,10 +146,10 @@ Errors
 
 New State
 
-Get Value                       Get Command             Type    Initial Value           Attribute
----------                       -----------             ----    -------------           ---------
-TEXTURE_COMPARE_SGIX            GetTexParameter[if]v    B       False                   texture
-TEXTURE_COMPARE_OPERATOR_SGIX   GetTexParameter[if]v    Z_2     TEXTURE_LEQUAL_R_SGIX   texture
+        Get Value                       Get Command             Type    Initial Value           Attribute
+        ---------                       -----------             ----    -------------           ---------
+        TEXTURE_COMPARE_SGIX            GetTexParameter[if]v    B       False                   texture
+        TEXTURE_COMPARE_OPERATOR_SGIX   GetTexParameter[if]v    Z_2     TEXTURE_LEQUAL_R_SGIX   texture
         
 
 New Implementation Dependent State

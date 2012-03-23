@@ -111,7 +111,7 @@ New State
 
 New Implementation Dependent State
 
-(table 6.24, p214) add the following entries:
+    (table 6.24, p214) add the following entries:
 
     Get Value                     Type    Get Command   Minimum Value   Description         Sec     Attribute
     ---------------------------   ----    -----------   -------------   -----------------   ------  --------------

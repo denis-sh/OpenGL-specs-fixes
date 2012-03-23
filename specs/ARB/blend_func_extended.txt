@@ -344,8 +344,8 @@ New State
     BLEND_DST_ALPHA           Z19   GetIntegerv   ZERO            Blending dest. A     4.1.8  color-buffer
                                                                   function
 
-NOTE: The only change is that Z14 and Z15 change to Z19 for the existing blend
-function state. No new state is actually added to the OpenGL Specification.
+    NOTE: The only change is that Z14 and Z15 change to Z19 for the existing blend
+    function state. No new state is actually added to the OpenGL Specification.
 
 New Implementation Dependent State
 

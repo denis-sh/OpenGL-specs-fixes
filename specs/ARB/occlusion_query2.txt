@@ -210,13 +210,13 @@ Conditional Rendering
 
 New State
 
-(table 6.33, p. 298)
+    (table 6.33, p. 298)
 
     Get Value         Type    Get Command          Initial Value   Description              Sec     Attribute
     ---------         ----    -----------          -------------   -----------              ------  ---------
     QUERY_RESULT      Z+      GetQueryObjectuiv    0               samples-passed count     6.1.6   -
-|                                                  FALSE           or any-samples-passed
-|                                                                  boolean value
+                                                   FALSE           or any-samples-passed
+                                                                   boolean value
 
 
 Usage Examples

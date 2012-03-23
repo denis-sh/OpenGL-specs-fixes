@@ -501,9 +501,9 @@ New State
     VIEWPORT                  16* x 4 x R      GetFloati_v       See 2.11.1      Viewport origin & extent  2.11.1 viewport
     DEPTH_RANGE               16* x 2 x R[0,1] GetDoublei_v      See 2.16.1      Depth range near & far    2.16.1 viewport
 
-NOTE: The changes are that VIEWPORT and DEPTH_RANGE are extended to
-accommodate 16* copies and now consist of floating-point and
-double-precision values, respectively.
+    NOTE: The changes are that VIEWPORT and DEPTH_RANGE are extended to
+    accommodate 16* copies and now consist of floating-point and
+    double-precision values, respectively.
 
     Table 6.26 (p. 418)
 
@@ -512,8 +512,8 @@ double-precision values, respectively.
     SCISSOR_TEST              16* x B     IsEnabledi            FALSE           Scissoring enabled        4.1.2  scissor/enable
     SCISSOR_BOX               16* x 4 x Z GetIntegeri_v         See 4.1.2       Scissor box               4.1.2  scissor
 
-NOTE: The only change is that SCISSOR_TEST and SCISSOR_BOX are extended
-to accommodate 16* copies.
+    NOTE: The only change is that SCISSOR_TEST and SCISSOR_BOX are extended
+    to accommodate 16* copies.
 
 New Implementation Dependent State
 
@@ -531,14 +531,14 @@ New Implementation Dependent State
                                                                             the gl_ViewportIndex GLSL
                                                                             variable
 
-NOTE 1: The recommended get command is changed from GetIntegerv to GetFloatv.
-NOTE 2: range for viewport bounds:
-  * On GL3-capable hardware the VIEWPORT_BOUNDS_RANGE should be at least
-    [-16384, 16383].
-  * On GL4-capable hardware the VIEWPORT_BOUNDS_RANGE should be at least
-    [-32768, 32767].
-NOTE 3: Valid values are: FIRST_VERTEX_CONVENTION,
-LAST_VERTEX_CONVENTION, PROVOKING_VERTEX, UNDEFINED_VERTEX.
+    NOTE 1: The recommended get command is changed from GetIntegerv to GetFloatv.
+    NOTE 2: range for viewport bounds:
+      * On GL3-capable hardware the VIEWPORT_BOUNDS_RANGE should be at least
+        [-16384, 16383].
+      * On GL4-capable hardware the VIEWPORT_BOUNDS_RANGE should be at least
+        [-32768, 32767].
+    NOTE 3: Valid values are: FIRST_VERTEX_CONVENTION,
+    LAST_VERTEX_CONVENTION, PROVOKING_VERTEX, UNDEFINED_VERTEX.
 
 Interactions with NV_depth_buffer_float
 

@@ -1305,7 +1305,7 @@ Errors
 
 New State
 
-Added after Table 6.27 Vertex Shader State:
+    Added after Table 6.27 Vertex Shader State:
 
     Get Value                         Get Command        Type      Initial Value     Attribute
     ----------------------------      -------------      -------   ---------------   --------------
@@ -1318,7 +1318,7 @@ Added after Table 6.27 Vertex Shader State:
     VERTEX_SHADER_EXT                 IsEnabled           B           False              -
     VERTEX_SHADER_BINDING_EXT         GetIntegerv         Z+           0                 -
 
-Added new Table Vertex Shader symbol state:
+    Added new Table Vertex Shader symbol state:
 
     Get Value                        Get Command             Type      Initial Value     Attribute
     ----------------------------     -------------           -------   ---------------   --------------

@@ -4143,83 +4143,83 @@ Errors
 
 New State
 
-update table 6.22 (page 212) so that all the "9"s are "25"s because there
-are 9 conventional map targets and 16 vertex attribute map targets making
-a total of 25.
+    update table 6.22 (page 212) so that all the "9"s are "25"s because there
+    are 9 conventional map targets and 16 vertex attribute map targets making
+    a total of 25.
 
-Get Value                     Type    Get Command                  Initial Value  Description         Sec       Attribute
-----------------------------  ------  ---------------------------  -------------  ------------------  --------  ------------
-VERTEX_PROGRAM_NV             B       IsEnabled                    False          vertex program      2.10      enable
-                                                                                  enable
-VERTEX_PROGRAM_POINT_SIZE_NV  B       IsEnabled                    False          program-specified   2.14.1.5  enable
-                                                                                  point size mode
-VERTEX_PROGRAM_TWO_SIDE_NV    B       IsEnabled                    False          two-sided color     2.14.1.5  enable
-                                                                                  mode
-PROGRAM_ERROR_POSITION_NV     Z       GetIntegerv                  -1             last program        2.14.1.7  -
-                                                                                  error position
-PROGRAM_PARAMETER_NV          96xR4   GetProgramParameterNV        (0,0,0,0)      program parameters  2.14.1.2  -
-CURRENT_ATTRIB_NV             16xR4   GetVertexAttribNV            see 2.14.6     vertex attributes   2.14.1.1  current
-                                      but zero cannot be queried,
-                                      aliased with per-vertex
-                                      parameters
-TRACK_MATRIX_NV               24xZ8+  GetTrackMatrixivNV           NONE           track matrix        2.14.5    -
-TRACK_MATRIX_TRANSFORM_NV     24xZ8+  GetTrackMatrixivNV           IDENTITY_NV    track matrix        2.14.5    -
-                                                                                  transform
-VERTEX_PROGRAM_BINDING_NV     Z+      GetIntegerv                  0              bound vertex        2.14.1.8  -
-                                                                                  program
-VERTEX_ATTRIB_ARRAYn_NV       16xB    IsEnabled                    False          vertex attrib       2.14.3    vertex-array
-                                                                                  array enable
-ATTRIB_ARRAY_SIZE_NV          16xZ    GetVertexAttribNV            4              vertex attrib       2.14.3    vertex-array
-                                                                                  array size
-ATTRIB_ARRAY_STRIDE_NV        16xZ+   GetVertexAttribNV            0              vertex attrib       2.14.3    vertex-array
-                                                                                  array stride
-ATTRIB_ARRAY_TYPE_NV          16xZ4   GetVertexAttribNV            FLOAT          vertex attrib       2.14.3    vertex-array
-                                                                                  array type
+    Get Value                     Type    Get Command                  Initial Value  Description         Sec       Attribute
+    ----------------------------  ------  ---------------------------  -------------  ------------------  --------  ------------
+    VERTEX_PROGRAM_NV             B       IsEnabled                    False          vertex program      2.10      enable
+                                                                                      enable
+    VERTEX_PROGRAM_POINT_SIZE_NV  B       IsEnabled                    False          program-specified   2.14.1.5  enable
+                                                                                      point size mode
+    VERTEX_PROGRAM_TWO_SIDE_NV    B       IsEnabled                    False          two-sided color     2.14.1.5  enable
+                                                                                      mode
+    PROGRAM_ERROR_POSITION_NV     Z       GetIntegerv                  -1             last program        2.14.1.7  -
+                                                                                      error position
+    PROGRAM_PARAMETER_NV          96xR4   GetProgramParameterNV        (0,0,0,0)      program parameters  2.14.1.2  -
+    CURRENT_ATTRIB_NV             16xR4   GetVertexAttribNV            see 2.14.6     vertex attributes   2.14.1.1  current
+                                          but zero cannot be queried,
+                                          aliased with per-vertex
+                                          parameters
+    TRACK_MATRIX_NV               24xZ8+  GetTrackMatrixivNV           NONE           track matrix        2.14.5    -
+    TRACK_MATRIX_TRANSFORM_NV     24xZ8+  GetTrackMatrixivNV           IDENTITY_NV    track matrix        2.14.5    -
+                                                                                      transform
+    VERTEX_PROGRAM_BINDING_NV     Z+      GetIntegerv                  0              bound vertex        2.14.1.8  -
+                                                                                      program
+    VERTEX_ATTRIB_ARRAYn_NV       16xB    IsEnabled                    False          vertex attrib       2.14.3    vertex-array
+                                                                                      array enable
+    ATTRIB_ARRAY_SIZE_NV          16xZ    GetVertexAttribNV            4              vertex attrib       2.14.3    vertex-array
+                                                                                      array size
+    ATTRIB_ARRAY_STRIDE_NV        16xZ+   GetVertexAttribNV            0              vertex attrib       2.14.3    vertex-array
+                                                                                      array stride
+    ATTRIB_ARRAY_TYPE_NV          16xZ4   GetVertexAttribNV            FLOAT          vertex attrib       2.14.3    vertex-array
+                                                                                      array type
 
-Table X.5.  New State Introduced by NV_vertex_program.
-
-
-Get Value            Type    Get Command          Initial Value  Description         Sec       Attribute
--------------------  ------  ------------------   -------------  ------------------  --------  ---------
-PROGRAM_TARGET_NV    Z2      GetProgramivNV       0              program target      6.1.13    -
-PROGRAM_LENGTH_NV    Z+      GetProgramivNV       0              program length      6.1.13    -
-PROGRAM_RESIDENT_NV  Z2      GetProgramivNV       False          program residency   6.1.13    -
-PROGRAM_STRING_NV    ubxn    GetProgramStringNV   ""             program string      6.1.13    -
-
-Table X.6.  Program Object State.
+    Table X.5.  New State Introduced by NV_vertex_program.
 
 
-Get Value    Type    Get Command   Initial Value  Description              Sec       Attribute
----------    ------  -----------   -------------  -----------------------  --------  ---------
--            12xR4   -             (0,0,0,0)      temporary registers      2.14.1.4  -
--            15xR4   -             (0,0,0,1)      vertex result registers  2.14.1.4  -
-             Z4      -             (0,0,0,0)      vertex program           2.14.1.3  -
-                                                  address register
+    Get Value            Type    Get Command          Initial Value  Description         Sec       Attribute
+    -------------------  ------  ------------------   -------------  ------------------  --------  ---------
+    PROGRAM_TARGET_NV    Z2      GetProgramivNV       0              program target      6.1.13    -
+    PROGRAM_LENGTH_NV    Z+      GetProgramivNV       0              program length      6.1.13    -
+    PROGRAM_RESIDENT_NV  Z2      GetProgramivNV       False          program residency   6.1.13    -
+    PROGRAM_STRING_NV    ubxn    GetProgramStringNV   ""             program string      6.1.13    -
 
-Table X.7.  Vertex Program Per-vertex Execution State.
+    Table X.6.  Program Object State.
 
 
-Get Value                         Type      Get Command      Initial Value  Description          Sec      Attribute
------------------------------     --------  --------------   -------------  -------------------  -------  ---------
-CURRENT_MATRIX_STACK_DEPTH_NV     m*Z+      GetIntegerv      1              current stack depth  6.1.14   -
-CURRENT_MATRIX_NV                 m*n*xM^4  GetFloatv        Identity       current matrix       6.1.14   -
+    Get Value    Type    Get Command   Initial Value  Description              Sec       Attribute
+    ---------    ------  -----------   -------------  -----------------------  --------  ---------
+    -            12xR4   -             (0,0,0,0)      temporary registers      2.14.1.4  -
+    -            15xR4   -             (0,0,0,1)      vertex result registers  2.14.1.4  -
+                 Z4      -             (0,0,0,0)      vertex program           2.14.1.3  -
+                                                      address register
 
-Table X.8.  Current matrix state where m is the total number of matrices
-including texture matrices and tracking matrices and n is the number of
-matrices on each particular matrix stack.  Note that this state is
-aliased with existing matrix state.
+    Table X.7.  Vertex Program Per-vertex Execution State.
+
+
+    Get Value                         Type      Get Command      Initial Value  Description          Sec      Attribute
+    -----------------------------     --------  --------------   -------------  -------------------  -------  ---------
+    CURRENT_MATRIX_STACK_DEPTH_NV     m*Z+      GetIntegerv      1              current stack depth  6.1.14   -
+    CURRENT_MATRIX_NV                 m*n*xM^4  GetFloatv        Identity       current matrix       6.1.14   -
+
+    Table X.8.  Current matrix state where m is the total number of matrices
+    including texture matrices and tracking matrices and n is the number of
+    matrices on each particular matrix stack.  Note that this state is
+    aliased with existing matrix state.
 
 
 New Implementation Dependent State
-                                                        Minimum
-Get Value                         Type    Get Command   Value       Description         Sec     Attribute
---------------------------------  ----    -----------   ----------  ------------------  ------  ---------
-MAX_TRACK_MATRIX_STACK_DEPTH_NV   Z+      GetIntegerv   1           maximum tracking    2.14.5  -
-                                                                    matrix stack depth
-MAX_TRACK_MATRICES_NV             Z+      GetIntegerv   8 (not to   maximum number of   2.14.5  -
-                                                        exceed 32)  tracking matrices
+                                                            Minimum
+    Get Value                         Type    Get Command   Value       Description         Sec     Attribute
+    --------------------------------  ----    -----------   ----------  ------------------  ------  ---------
+    MAX_TRACK_MATRIX_STACK_DEPTH_NV   Z+      GetIntegerv   1           maximum tracking    2.14.5  -
+                                                                        matrix stack depth
+    MAX_TRACK_MATRICES_NV             Z+      GetIntegerv   8 (not to   maximum number of   2.14.5  -
+                                                            exceed 32)  tracking matrices
 
-Table X.9.  New Implementation-Dependent Values Introduced by NV_vertex_program.
+    Table X.9.  New Implementation-Dependent Values Introduced by NV_vertex_program.
 
 
 Revision History

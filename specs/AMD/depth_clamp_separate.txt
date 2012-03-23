@@ -116,7 +116,7 @@ Errors
 
 New State
 
-Add to table 6.9, Transformation State - p.350
+    Add to table 6.9, Transformation State - p.350
 
     +----------------------+---------+---------------+---------------+-------------------------+-------+
     | Get Value            | Type    | Get Command   | Initial Value | Description             | Sec   |

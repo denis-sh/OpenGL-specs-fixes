@@ -1005,7 +1005,7 @@ Dependencies on NV_pixel_data_range
 
 New State
 
-(table 6.20, Pixels, p. 235)
+    (table 6.20, Pixels, p. 235)
 
                                                          Initial
     Get Value                        Type   Get Command  Value    Sec     Attribute

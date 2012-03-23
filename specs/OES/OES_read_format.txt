@@ -141,7 +141,7 @@ New State
 
 New Implementation Dependent State
 
-(table 6.28)
+    (table 6.28)
 
     Get Value     Type  Get Command  Value  Description  Sec.  Attribute
     ---------     ----  -----------  -----  -----------  ----- ---------

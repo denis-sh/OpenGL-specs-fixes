@@ -449,20 +449,20 @@ New State
 
     In table 6.16, Texture Objects, p. 224, add the following:
 
-Get Value               Type      Get Command                  Initial Value  Description       Sec.   Attribute
-----------------------  --------  ---------------------------  -------------  ----------------  -----  ---------
-TEXTURE_1D              I         GetColorTableEXT             empty          1D palette        3.8    -
-TEXTURE_2D              I         GetColorTableEXT             empty          2D palette        3.8    -
-TEXTURE_3D              I         GetColorTableEXT             empty          3D palette        3.8    -
-TEXTURE_CUBE_MAP        I         GetColorTableEXT             empty          cube map palette  3.8    -
-COLOR_TABLE_FORMAT_EXT  2x4xZn    GetColorTableParameterivEXT  RGBA           paletted texture  3.8    -
-                                                                              formats
-COLOR_TABLE_WIDTH_EXT   2x4xZ+    GetColorTableParameteriv     0              paletted texture  3.8    -
-                                                                              width
-COLOR_TABLE_x_SIZE_EXT  6x2x4xZ+  GetColorTableParameteriv     0              paletted texture  3.8    -
-                                                                              component sizes
-TEXTURE_INDEX_SIZE_EXT  nxZ+      GetTexLevelParameter         0              texture image's   3.8    -
-                                                                              index resolution
+    Get Value               Type      Get Command                  Initial Value  Description       Sec.   Attribute
+    ----------------------  --------  ---------------------------  -------------  ----------------  -----  ---------
+    TEXTURE_1D              I         GetColorTableEXT             empty          1D palette        3.8    -
+    TEXTURE_2D              I         GetColorTableEXT             empty          2D palette        3.8    -
+    TEXTURE_3D              I         GetColorTableEXT             empty          3D palette        3.8    -
+    TEXTURE_CUBE_MAP        I         GetColorTableEXT             empty          cube map palette  3.8    -
+    COLOR_TABLE_FORMAT_EXT  2x4xZn    GetColorTableParameterivEXT  RGBA           paletted texture  3.8    -
+                                                                                  formats
+    COLOR_TABLE_WIDTH_EXT   2x4xZ+    GetColorTableParameteriv     0              paletted texture  3.8    -
+                                                                                  width
+    COLOR_TABLE_x_SIZE_EXT  6x2x4xZ+  GetColorTableParameteriv     0              paletted texture  3.8    -
+                                                                                  component sizes
+    TEXTURE_INDEX_SIZE_EXT  nxZ+      GetTexLevelParameter         0              texture image's   3.8    -
+                                                                                  index resolution
 
 New Implementation Dependent State
 

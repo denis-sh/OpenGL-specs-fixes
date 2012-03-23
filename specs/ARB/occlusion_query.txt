@@ -826,7 +826,7 @@ Errors
 
 New State
 
-(table 6.18, p. 233)
+    (table 6.18, p. 233)
 
     Get Value                      Type    Get Command     Initial Value   Description              Sec     Attribute
     ---------                      ----    -----------     -------------   -----------              ------  ---------
@@ -837,7 +837,7 @@ New State
 
 New Implementation Dependent State
 
-(table 6.29, p. 224) Add the following entry:
+    (table 6.29, p. 224) Add the following entry:
 
     Get Value                      Type    Get Command   Minimum Value      Description           Sec     Attribute
     --------------------------     ----    -----------   -------------      ----------------      ------  --------------

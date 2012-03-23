@@ -347,10 +347,10 @@ New State
     
     Add the following entry to table 6.17:
 
-Get Value                Type    Get Command            Value   Description                           Sec.  Attribute
------------------------  ------  --------------------  -------  ------------------------------------  ----  ---------
-TEXTURE_SHARED_SIZE_EXT  n x Z+  GetTexLevelParameter  0        xD texture image i's shared exponent  3.8   -
-                                                                field size
+    Get Value                Type    Get Command            Value   Description                           Sec.  Attribute
+    -----------------------  ------  --------------------  -------  ------------------------------------  ----  ---------
+    TEXTURE_SHARED_SIZE_EXT  n x Z+  GetTexLevelParameter  0        xD texture image i's shared exponent  3.8   -
+                                                                    field size
 
 New Implementation Dependent State
 

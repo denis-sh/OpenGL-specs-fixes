@@ -531,7 +531,7 @@ Modify D.3 (Propagating State Changes)
 
 New State
 
-Add new table, labeled "Program Object State (cont.)" after Table 6.36, p. 377
+    Add new table, labeled "Program Object State (cont.)" after Table 6.36, p. 377
 
                                                              Initial
     Get Value                         Type  Get Command      Value    Description                Sec.
@@ -570,7 +570,7 @@ Add new table, labeled "Program Object State (cont.)" after Table 6.36, p. 377
       INDEX                                 Uniformsiv                buffer associated with an
                                                                       active uniform
 
-Add new table, labeled "Atomic Counter State", after Table 6.39, p. 380
+    Add new table, labeled "Atomic Counter State", after Table 6.39, p. 380
 
                                                              Initial
     Get Value                         Type  Get Command      Value    Description                Sec.
@@ -590,7 +590,7 @@ Add new table, labeled "Atomic Counter State", after Table 6.39, p. 380
 New Implementation Dependent State
 
 
-Add to Table 6.46, Implementation Dependent Vertex Shader Limits, p. 387:
+    Add to Table 6.46, Implementation Dependent Vertex Shader Limits, p. 387:
 
     Get Value                                  Type  Get Command    Minimum Value  Description                Sec. 
     -----------------------                    ----  -----------    -------------  -------------------------  -----
@@ -600,7 +600,7 @@ Add to Table 6.46, Implementation Dependent Vertex Shader Limits, p. 387:
     MAX_VERTEX_ATOMIC_COUNTERS                 Z+    GetIntegerv    0              Number of atomic counters  2.11.11
                                                                                    accessed by a vertex 
                                                                                    shader
-Add to Table 6.47, Implementation Dependent Tesselation Shader Limits, p. 388:
+    Add to Table 6.47, Implementation Dependent Tesselation Shader Limits, p. 388:
 
     Get Value                                  Type  Get Command    Minimum Value  Description                Sec. 
     -----------------------                    ----  -----------    -------------  -------------------------  -----
@@ -616,7 +616,7 @@ Add to Table 6.47, Implementation Dependent Tesselation Shader Limits, p. 388:
     MAX_TESS_EVALUATION_ATOMIC_COUNTERS        Z+    GetIntegerv    0              Number of atomic counters  2.11.11
                                                                                    accessed by a tesselation 
                                                                                    evaluation shader
-Add to Table 6.48, Implementation Dependent Geometry Shader Limits, p. 389:
+    Add to Table 6.48, Implementation Dependent Geometry Shader Limits, p. 389:
 
     Get Value                                  Type  Get Command    Minimum Value  Description                Sec. 
     -----------------------                    ----  -----------    -------------  -------------------------  -----
@@ -626,7 +626,7 @@ Add to Table 6.48, Implementation Dependent Geometry Shader Limits, p. 389:
     MAX_GEOMETRY_ATOMIC_COUNTERS               Z+    GetIntegerv    0              Number of atomic counters  2.11.11
                                                                                    accessed by a geometry
                                                                                    shader
-Add to Table 6.49, Implementation Dependent Fragment Shader Limits, p. 390:
+    Add to Table 6.49, Implementation Dependent Fragment Shader Limits, p. 390:
 
     Get Value                                  Type  Get Command    Minimum Value  Description                Sec. 
     -----------------------                    ----  -----------    -------------  -------------------------  -----
@@ -636,7 +636,7 @@ Add to Table 6.49, Implementation Dependent Fragment Shader Limits, p. 390:
     MAX_FRAGMENT_ATOMIC_COUNTERS               Z+    GetIntegerv    8              Number of atomic counters  2.11.11
                                                                                    accessed by a fragment
                                                                                    shader
-Add to Table 6.50 Implementation Dependent Aggregate Shader Limits, p. 391:
+    Add to Table 6.50 Implementation Dependent Aggregate Shader Limits, p. 391:
 
     Get Value                                  Type  Get Command    Minimum Value  Description                Sec. 
     -----------------------                    ----  -----------    -------------  -------------------------  -----

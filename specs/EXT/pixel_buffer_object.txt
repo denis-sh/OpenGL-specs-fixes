@@ -286,7 +286,7 @@ Errors
 
 New State
 
-(table 6.20, Pixels, p. 235)
+    (table 6.20, Pixels, p. 235)
 
     Get Value                        Type  Get Command  Initial Value  Sec     Attribute
     ---------                        ----  -----------  -------------  ---     ---------

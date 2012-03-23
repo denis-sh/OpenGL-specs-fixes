@@ -1394,7 +1394,7 @@ Errors
 
 New State
 
-(table 6.7, Vertex Array Data, p. 222)
+    (table 6.7, Vertex Array Data, p. 222)
 
     Get Value                                 Type      Get Command              Initial Value   Sec     Attribute
     ---------                                 ----      -----------              -------------   ---     ---------
@@ -1414,7 +1414,7 @@ New State
 
     XXX need to add buffer state for variant arrays
 
-(new table for buffer objects)
+    (new table for buffer objects)
 
     Get Value                   Type    Get Command                  Initial Value   Sec     Attribute
     ---------                   ----    -----------                  -------------   ---     ---------

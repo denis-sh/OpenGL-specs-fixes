@@ -134,13 +134,13 @@ Errors
 
 New State
 
-(table 6.15, page 205)
+    (table 6.15, page 205)
     Get Value                 Type  Get Command   Initial Value   Sec    Attribute
     ------------------------  ----  ------------  -------------   -----  ---------
     BLEND_SRC                  Z15  GetIntegerv        ONE        4.1.6  color-buffer
     BLEND_DST                  Z14  GetIntegerv        ZERO       4.1.6  color-buffer
 
-NOTE: the only change is that Z13 changes to Z15 and Z12 changes to Z14
+    NOTE: the only change is that Z13 changes to Z15 and Z12 changes to Z14
 
 New Implementation Dependent State
 

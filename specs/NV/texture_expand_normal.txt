@@ -203,12 +203,12 @@ Errors
 
 New State
 
-(add to table 6.15, p. 230)
-                                                         Initial
-Get Value                       Type  Get Command        Value   Description         Sec.   Attribute
-------------------------------  ----  -----------------  ------- ------------------  -----  ---------
-TEXTURE_UNSIGNED_REMAP_MODE_NV  nxZ2  GetTexParameteriv  NONE    unsigned component  3.8.8  texture
-                                                                 remapping
+    (add to table 6.15, p. 230)
+                                                             Initial
+    Get Value                       Type  Get Command        Value   Description         Sec.   Attribute
+    ------------------------------  ----  -----------------  ------- ------------------  -----  ---------
+    TEXTURE_UNSIGNED_REMAP_MODE_NV  nxZ2  GetTexParameteriv  NONE    unsigned component  3.8.8  texture
+                                                                     remapping
 
 
 Revision History

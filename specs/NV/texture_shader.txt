@@ -3213,71 +3213,71 @@ Errors
 
 New State
 
-Add the following entries to table 6.12:
+    Add the following entries to table 6.12:
 
-Get Value             Type    Get Command           Initial Value  Description            Sec  Attribute
---------------------  ------  --------------------  -------------  ---------------------  ---  ---------
-TEXTURE_HI_SIZE_NV    nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
-                                                                   hi resolution
-TEXTURE_LO_SIZE_NV    nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
-                                                                   lo resolution
-TEXTURE_DS_SIZE_NV    nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
-                                                                   ds resolution
-TEXTURE_DT_SIZE_NV    nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
-                                                                   dt resolution
-TEXTURE_MAG_SIZE_NV   nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
-                                                                   mag resolution
+    Get Value             Type    Get Command           Initial Value  Description            Sec  Attribute
+    --------------------  ------  --------------------  -------------  ---------------------  ---  ---------
+    TEXTURE_HI_SIZE_NV    nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
+                                                                       hi resolution
+    TEXTURE_LO_SIZE_NV    nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
+                                                                       lo resolution
+    TEXTURE_DS_SIZE_NV    nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
+                                                                       ds resolution
+    TEXTURE_DT_SIZE_NV    nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
+                                                                       dt resolution
+    TEXTURE_MAG_SIZE_NV   nxZ+    GetTexLevelParameter  0              xD texture image i's   3.8  texture
+                                                                       mag resolution
 
-Change the TEXTURE_BORDER_COLOR line in table 6.13 to read:
+    Change the TEXTURE_BORDER_COLOR line in table 6.13 to read:
 
-Get Value                 Type    Get Command      Initial Value  Description            Sec  Attribute
-------------------------  ------  ---------------  -------------  ---------------------  ---  ---------
-TEXTURE_BORDER_VALUES_NV  4xR     GetTexParameter  (0,0,0,0)      Texture border values  3.8  texture
-(TEXTURE_BORDER_COLOR)
+    Get Value                 Type    Get Command      Initial Value  Description            Sec  Attribute
+    ------------------------  ------  ---------------  -------------  ---------------------  ---  ---------
+    TEXTURE_BORDER_VALUES_NV  4xR     GetTexParameter  (0,0,0,0)      Texture border values  3.8  texture
+    (TEXTURE_BORDER_COLOR)
 
-Table 6.TextureShaders.  Texture Shaders.
+    Table 6.TextureShaders.  Texture Shaders.
 
-Get Value                    Type    Get Command  Initial Value         Description          Sec     Attribute
----------------------------  ------  -----------  --------------------  -------------------  ------  --------------
-HI_BIAS_NV                   R       GetFloatv    0.0                   Hi bias for HILO     3.6.3   pixel
-LO_BIAS_NV                   R       GetFloatv    0.0                   Lo bias for HILO     3.6.3   pixel
-DS_BIAS_NV                   R       GetFloatv    0.0                   Ds bias              3.6.3   pixel
-DT_BIAS_NV                   R       GetFloatv    0.0                   Dt bias              3.6.3   pixel
-MAGNITUDE_BIAS_NV            R       GetFloatv    0.0                   Magnitude bias       3.6.3   pixel
-VIBRANCE_BIAS_NV             R       GetFloatv    0.0                   Vibrance bias        3.6.3   pixel
-HI_SCALE_NV                  R       GetFloatv    1.0                   Hi scale             3.6.3   pixel
-LO_SCALE_NV                  R       GetFloatv    1.0                   Lo scale             3.6.3   pixel
-DS_SCALE_NV                  R       GetFloatv    1.0                   Ds scale             3.6.3   pixel
-DT_SCALE_NV                  R       GetFloatv    1.0                   Dt scale             3.6.3   pixel
-MAGNITUDE_SCALE_NV           R       GetFloatv    1.0                   Magnitude scale      3.6.3   pixel
-VIBRANCE_SCALE_NV            R       GetFloatv    1.0                   Vibrance scale       3.6.3   pixel
+    Get Value                    Type    Get Command  Initial Value         Description          Sec     Attribute
+    ---------------------------  ------  -----------  --------------------  -------------------  ------  --------------
+    HI_BIAS_NV                   R       GetFloatv    0.0                   Hi bias for HILO     3.6.3   pixel
+    LO_BIAS_NV                   R       GetFloatv    0.0                   Lo bias for HILO     3.6.3   pixel
+    DS_BIAS_NV                   R       GetFloatv    0.0                   Ds bias              3.6.3   pixel
+    DT_BIAS_NV                   R       GetFloatv    0.0                   Dt bias              3.6.3   pixel
+    MAGNITUDE_BIAS_NV            R       GetFloatv    0.0                   Magnitude bias       3.6.3   pixel
+    VIBRANCE_BIAS_NV             R       GetFloatv    0.0                   Vibrance bias        3.6.3   pixel
+    HI_SCALE_NV                  R       GetFloatv    1.0                   Hi scale             3.6.3   pixel
+    LO_SCALE_NV                  R       GetFloatv    1.0                   Lo scale             3.6.3   pixel
+    DS_SCALE_NV                  R       GetFloatv    1.0                   Ds scale             3.6.3   pixel
+    DT_SCALE_NV                  R       GetFloatv    1.0                   Dt scale             3.6.3   pixel
+    MAGNITUDE_SCALE_NV           R       GetFloatv    1.0                   Magnitude scale      3.6.3   pixel
+    VIBRANCE_SCALE_NV            R       GetFloatv    1.0                   Vibrance scale       3.6.3   pixel
 
-TEXTURE_SHADER_NV            B       IsEnabled    False                 Texture shaders      3.8     texture/enable
-                                                                        enable
+    TEXTURE_SHADER_NV            B       IsEnabled    False                 Texture shaders      3.8     texture/enable
+                                                                            enable
 
-SHADER_OPERATION_NV          TxZ21   GetTexEnviv  NONE                  Texture shader       3.8.13  texture
-                                                                        operation
-CULL_MODES_NV                Tx4xZ2  GetTexEnviv  GEQUAL,GEQUAL,        Texture shader       3.8.13  texture
-                                                  GEQUAL,GEQUAL         cull fragment modes
-RGBA_UNSIGNED_-              TxZ2    GetTexEnviv  UNSIGNED_IDENTITY_NV  Texture shader RGBA  3.8.13  texture
-  DOT_PRODUCT_MAPPING_NV                                                dot product mapping
-PREVIOUS_TEXTURE_INPUT_NV    TxZn    GetTexEnviv  TEXTURE0_ARB          Texture shader       3.8.13  texture
-                                                                        previous tex input
-CONST_EYE_NV                 TxRx3   GetTexEnvfv  (0,0,-1)              Shader constant      3.8.13  texture
-                                                                        eye vector
-OFFSET_TEXTURE_MATRIX_NV     TxM2    GetTexEnvfv  (1,0,0,1)             2x2 texture offset   3.8.13  texture
-                                                                        matrix
-OFFSET_TEXTURE_SCALE_NV      TxR     GetTexEnvfv  1                     Texture offset       3.8.13  texture
-                                                                        scale
-OFFSET_TEXTURE_BIAS_NV       TxR     GetTexEnvfv  0                     Texture offset       3.8.13  texture
-                                                                        bias
-SHADER_CONSISTENT_NV         TxB     GetTexEnviv  True                  Texture shader       3.8.13  texture
-                                                                        stage consistency
+    SHADER_OPERATION_NV          TxZ21   GetTexEnviv  NONE                  Texture shader       3.8.13  texture
+                                                                            operation
+    CULL_MODES_NV                Tx4xZ2  GetTexEnviv  GEQUAL,GEQUAL,        Texture shader       3.8.13  texture
+                                                      GEQUAL,GEQUAL         cull fragment modes
+    RGBA_UNSIGNED_-              TxZ2    GetTexEnviv  UNSIGNED_IDENTITY_NV  Texture shader RGBA  3.8.13  texture
+      DOT_PRODUCT_MAPPING_NV                                                dot product mapping
+    PREVIOUS_TEXTURE_INPUT_NV    TxZn    GetTexEnviv  TEXTURE0_ARB          Texture shader       3.8.13  texture
+                                                                            previous tex input
+    CONST_EYE_NV                 TxRx3   GetTexEnvfv  (0,0,-1)              Shader constant      3.8.13  texture
+                                                                            eye vector
+    OFFSET_TEXTURE_MATRIX_NV     TxM2    GetTexEnvfv  (1,0,0,1)             2x2 texture offset   3.8.13  texture
+                                                                            matrix
+    OFFSET_TEXTURE_SCALE_NV      TxR     GetTexEnvfv  1                     Texture offset       3.8.13  texture
+                                                                            scale
+    OFFSET_TEXTURE_BIAS_NV       TxR     GetTexEnvfv  0                     Texture offset       3.8.13  texture
+                                                                            bias
+    SHADER_CONSISTENT_NV         TxB     GetTexEnviv  True                  Texture shader       3.8.13  texture
+                                                                            stage consistency
 
-[ The "Tx" type prefix means that the state is per-texture unit. ]
+    [ The "Tx" type prefix means that the state is per-texture unit. ]
 
-[ The "Zn" type is an n-valued integer where n is the
-  implementation-dependent number of texture units supported.]
+    [ The "Zn" type is an n-valued integer where n is the
+      implementation-dependent number of texture units supported.]
 
 New Implementation State
 

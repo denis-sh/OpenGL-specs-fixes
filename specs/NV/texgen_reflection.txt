@@ -165,7 +165,7 @@ Errors
 
 New State
 
-(table 6.14, p204) change the entry for TEXTURE_GEN_MODE to:
+    (table 6.14, p204) change the entry for TEXTURE_GEN_MODE to:
 
     Get Value            Type    Get Command     Initial Value   Description        Sec    Attribute
     ---------            ----    -----------     -------------   -----------        ------ ---------
@@ -173,7 +173,7 @@ New State
                                                                  texgen (for s,t,r,
                                                                  and q)
 
-(the type changes from 4xZ3 to 4xZ5)
+    (the type changes from 4xZ3 to 4xZ5)
 
 New Implementation State
 

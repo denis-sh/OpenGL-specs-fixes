@@ -108,14 +108,14 @@ Errors
 
 New State
 
-(table 6.15, page 205)
+    (table 6.15, page 205)
     Get Value                 Type  Get Command   Initial Value   Sec    Attribute
     ------------------------  ----  ------------  -------------   -----  ---------
     STENCIL_FAIL               Z8   GetIntegerv        KEEP       4.1.4  stencil-buffer
     STENCIL_PASS_DEPTH_FAIL    Z8   GetIntegerv        KEEP       4.1.4  stencil-buffer
     STENCIL_PASS_DEPTH_PASS    Z8   GetIntegerv        KEEP       4.1.4  stencil-buffer
 
-NOTE: the only change is that Z6 type changes to Z8
+    NOTE: the only change is that Z6 type changes to Z8
 
 New Implementation Dependent State
 

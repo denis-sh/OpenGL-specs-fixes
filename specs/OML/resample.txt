@@ -378,13 +378,13 @@ Errors
 
 New State
 
-(table 6.17, p. 207)
+    (table 6.17, p. 207)
     Get Value           Type    Get Command Initial Value
     ---------           ----    ----------- -------------
     UNPACK_RESAMPLE_OML Z3      GetIntegerv RESAMPLE_REPLICATE_OML
     PACK_RESAMPLE_OML   Z2      GetIntegerv RESAMPLE_DECIMATE_OML
 
-(continued columns)
+    (continued columns)
     Get Value           Description             Sec Attribute
     ---------           -----------             --- ---------
     UNPACK_RESAMPLE_OML Pixel upsampling mode   3.6 pixel-store

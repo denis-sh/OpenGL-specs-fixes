@@ -1200,7 +1200,7 @@ Errors
 
 New State
 
-Add a new table, between tables 6.44 and 6.45:
+    Add a new table, between tables 6.44 and 6.45:
 
                                    Get          Initial
     Get Value                Type  Command      Value    Description   Sec.  Attribute
@@ -1210,7 +1210,7 @@ Add a new table, between tables 6.44 and 6.45:
 
     Table 6.45. Video Capture State
 
-Add a new table, after the above:
+    Add a new table, after the above:
 
                                                Get                Initial
     Get Value                            Type  Command            Value        Description   Sec.  Attribute
@@ -1222,7 +1222,7 @@ Add a new table, after the above:
 
     Table 6.46. Video Capture Slot State
 
-Add a new table, after the above:
+    Add a new table, after the above:
 
                                                Get                      Initial
     Get Value                            Type  Command                  Value         Description   Sec.  Attribute
@@ -1318,7 +1318,7 @@ Add a new table, after the above:
 
 New Implementation Dependent State
 
-(Table 6.50, p. 388)
+    (Table 6.50, p. 388)
 
                                         Get                Initial
     Get Value                     Type  Command            Value         Description    Sec.  Attribute

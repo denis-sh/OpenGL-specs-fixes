@@ -546,7 +546,7 @@ Errors
 New State
 
     Each object type that supports this extension has the following new
-state:
+    state:
 
     Type  Get Command        Inital Value  Description   Section       Attribute
     ----  -----------------  ------------  ------------  -------       ---------

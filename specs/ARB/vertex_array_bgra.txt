@@ -230,7 +230,7 @@ New State
     a k-valued integer where k is 3, 2, and 5 for color, secondary,
     and vertex attrib arrays respectively.
 
-(table 6.6, "Vertex Array Data", p. 271)
+    (table 6.6, "Vertex Array Data", p. 271)
     Get Value                   Type  Get Command  Initial Value  Description            Sec Attribute
     ---------                   ----  -----------  -------------  ---------------------  --- ---------
     COLOR_ARRAY_SIZE            Z3    GetIntegerv  4              Color components       2.8 vertex-array
@@ -238,7 +238,7 @@ New State
     SECONDARY_COLOR_ARRAY_SIZE  Z2    GetIntegerv  3              Secondary color        2.8 vertex-array
                                                                   components per vertex
 
-(table 6.7, "Vertex Array Data (cont.)", p. 272)
+    (table 6.7, "Vertex Array Data (cont.)", p. 272)
     Get Value                   Type      Get Command  Initial Value  Description            Sec Attribute
     ---------                   --------  -----------  -------------  ---------------------  --- ---------
     VERTEX_ATTRIB_ARRAY_SIZE    16* x Z5  GetIntegerv  4              Vertex attrib array    2.8 vertex-array

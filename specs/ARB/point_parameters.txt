@@ -320,7 +320,7 @@ Errors
 
 New State
 
-(table 6.11, p. 201)
+    (table 6.11, p. 201)
                                                                 Initial
     Get Value                           Type    Get Command     Value   Description Sec.    Attribute
     ---------                           ----    -----------     ------- ----------- ----    ---------

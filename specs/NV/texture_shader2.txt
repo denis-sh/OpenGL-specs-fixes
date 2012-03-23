@@ -560,19 +560,19 @@ Errors
 
 New State
 
-Table 6.TextureShaders.  Texture Shaders.
+    Table 6.TextureShaders.  Texture Shaders.
 
-Get Value                    Type    Get Command  Initial Value         Description          Sec     Attribute
----------------------------  ------  -----------  --------------------  -------------------  ------  --------------
-SHADER_OPERATION_NV          TxZ23   GetTexEnviv  NONE                  Texture shader       3.8.13  texture
-                                                                        operation
+    Get Value                    Type    Get Command  Initial Value         Description          Sec     Attribute
+    ---------------------------  ------  -----------  --------------------  -------------------  ------  --------------
+    SHADER_OPERATION_NV          TxZ23   GetTexEnviv  NONE                  Texture shader       3.8.13  texture
+                                                                            operation
 
-* Z21 in NV_texture_shader is now Z23 with NV_texture_shader2.
+    * Z21 in NV_texture_shader is now Z23 with NV_texture_shader2.
 
-[ The "Tx" type prefix means that the state is per-texture unit. ]
+    [ The "Tx" type prefix means that the state is per-texture unit. ]
 
-[ The "Zn" type is an n-valued integer where n is the
-  implementation-dependent number of texture units supported.]
+    [ The "Zn" type is an n-valued integer where n is the
+      implementation-dependent number of texture units supported.]
 
 New Implementation State
 

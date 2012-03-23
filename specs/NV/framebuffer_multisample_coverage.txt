@@ -232,7 +232,7 @@ Errors
 
 New State
 
-(add to table 8.nnn, "Renderbuffers (state per renderbuffer object)")
+    (add to table 8.nnn, "Renderbuffers (state per renderbuffer object)")
 
                                                                            Initial
     Get Value                         Type  Get Command                    Value    Description          Section       Attribute
@@ -244,7 +244,7 @@ New State
                                                                                     samples used by the
                                                                                     renderbuffer
 
-(modify RENDERBUFFER_SAMPLES_EXT entry in table 8.nnn)
+    (modify RENDERBUFFER_SAMPLES_EXT entry in table 8.nnn)
 
                                                                    Initial
     Get Value                 Type  Get Command                    Value   Description          Section       Attribute

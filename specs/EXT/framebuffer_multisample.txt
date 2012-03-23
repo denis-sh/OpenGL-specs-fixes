@@ -401,9 +401,9 @@ New State
     RENDERBUFFER_SAMPLES_EXT           Z+      GetRenderbufferParameterivEXT  0              number of samples       4.4.2.1       -
 
 
-To the table added by EXT_framebuffer_object called "Framebuffer
-Dependent Values", table 9.nnn, add the following new framebuffer
-dependent state.
+    To the table added by EXT_framebuffer_object called "Framebuffer
+    Dependent Values", table 9.nnn, add the following new framebuffer
+    dependent state.
 
     Get Value        Type  Get Command     Minimum Value    Description             Section  Attribute
     ---------        ----  -----------     -------------    -------------------     -------  ---------

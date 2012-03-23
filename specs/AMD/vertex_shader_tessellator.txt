@@ -441,7 +441,7 @@ Errors
 
 New State
 
-Add to Table 6.5 Vertex Array Data
+    Add to Table 6.5 Vertex Array Data
 
     Get Value                  Type    Get Command     Value         Description          Sec.    Attribute
     ---------                  ----    --------------- -------       -------------------- ----    ---------

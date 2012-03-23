@@ -771,7 +771,7 @@ Errors
 
 New State
 
-(table 6.25, p. 215)
+    (table 6.25, p. 215)
 
     Get value          Type  Get Cmnd     Minimum Value  Description                  Sec.  Attribute
     -----------------  ----  -----------  -------------  ---------------------------  ----  ---------

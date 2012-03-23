@@ -1026,25 +1026,25 @@ Errors
 
 New State
 
-UPDATE lines in Table 6.TextureShaders.
+    UPDATE lines in Table 6.TextureShaders.
 
-Get Value                Type    Get Command  Initial Value         Description          Sec     Attribute
------------------------  ------  -----------  --------------------  -------------------  ------  ---------
-SHADER_OPERATION_NV      TxZ37   GetTexEnviv  NONE                  Texture shader       3.8.13  texture
-                                                                    operation
-RGBA_UNSIGNED_-          TxZ3    GetTexEnviv  UNSIGNED_IDENTITY_NV  Texture shader RGBA  3.8.13  texture
-  DOT_PRODUCT_MAPPING_NV                                            dot product mapping
+    Get Value                Type    Get Command  Initial Value         Description          Sec     Attribute
+    -----------------------  ------  -----------  --------------------  -------------------  ------  ---------
+    SHADER_OPERATION_NV      TxZ37   GetTexEnviv  NONE                  Texture shader       3.8.13  texture
+                                                                        operation
+    RGBA_UNSIGNED_-          TxZ3    GetTexEnviv  UNSIGNED_IDENTITY_NV  Texture shader RGBA  3.8.13  texture
+      DOT_PRODUCT_MAPPING_NV                                            dot product mapping
 
-* SHADER_OPERATION_NV: Z21 in NV_texture_shader (and Z23 in
-  NV_texture_shader2) is now Z37 with NV_texture_shader3.
+    * SHADER_OPERATION_NV: Z21 in NV_texture_shader (and Z23 in
+      NV_texture_shader2) is now Z37 with NV_texture_shader3.
 
-* RGBA_UNSIGNED_DOT_PRODUCT_MAPPING_NV: Z2 in NV_texture_shader is now
-  Z3 with NV_texture_shader3.
+    * RGBA_UNSIGNED_DOT_PRODUCT_MAPPING_NV: Z2 in NV_texture_shader is now
+      Z3 with NV_texture_shader3.
 
-[ The "Tx" type prefix means that the state is per-texture unit. ]
+    [ The "Tx" type prefix means that the state is per-texture unit. ]
 
-[ The "Zn" type is an n-valued integer where n is the
-  implementation-dependent number of texture units supported.]
+    [ The "Zn" type is an n-valued integer where n is the
+      implementation-dependent number of texture units supported.]
 
 New Implementation State
 

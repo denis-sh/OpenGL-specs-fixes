@@ -384,13 +384,13 @@ Errors
 
 New State
 
-(table 6.5, p. 195)
+    (table 6.5, p. 195)
     Get Value                   Type    Get Command     Initial Value   Description     Sec Attribute
     ---------                   ----    -----------     -------------   -----------     --- ---------
     CURRENT_SECONDARY_COLOR_EXT C       GetIntegerv,    (0,0,0,0)       Current         2.7 current
                                         GetFloatv                       secondary color
 
-(table 6.6, p. 197)
+    (table 6.6, p. 197)
     Get Value                           Type    Get Command     Initial Value   Description                     Sec Attribute
     ---------                           ----    -----------     -------------   -----------                     --- ---------
     SECONDARY_COLOR_ARRAY_EXT           B       IsEnabled       False           Sec. color array enable         2.8 vertex-array
@@ -399,7 +399,7 @@ New State
     SECONDARY_COLOR_ARRAY_STRIDE_EXT    Z+      GetIntegerv     0               Stride between sec. colors      2.8 vertex-array
     SECONDARY_COLOR_ARRAY_POINTER_EXT   Y       GetPointerv     0               Pointer to the sec. color array 2.8 vertex-array
 
-(table 6.8, p. 198)
+    (table 6.8, p. 198)
     Get Value                   Type    Get Command     Initial Value   Description     Sec Attribute
     ---------                   ----    -----------     -------------   -----------     --- ---------
     COLOR_SUM_EXT               B       IsEnabled       False           True if color   3.9 fog/enable

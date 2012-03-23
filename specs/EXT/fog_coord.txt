@@ -350,13 +350,13 @@ Errors
 
 New State
 
-(table 6.5, p. 195)
+    (table 6.5, p. 195)
     Get Value                   Type    Get Command     Initial Value   Description     Sec Attribute
     ---------                   ----    -----------     -------------   -----------     --- ---------
     CURRENT_FOG_COORDINATE_EXT  R       GetIntegerv,    0               Current         2.7 current
                                         GetFloatv                       fog coordinate
 
-(table 6.6, p. 197)
+    (table 6.6, p. 197)
     Get Value                           Type    Get Command     Initial Value   Description                     Sec Attribute
     ---------                           ----    -----------     -------------   -----------                     --- ---------
     FOG_COORDINATE_ARRAY_EXT            B       IsEnabled       False           Fog coord array enable          2.8 vertex-array
@@ -365,7 +365,7 @@ New State
     FOG_COORDINATE_ARRAY_POINTER_EXT    Y       GetPointerv     0               Pointer to the fog coord array  2.8 vertex-array
 
 
-(table 6.8, p. 198)
+    (table 6.8, p. 198)
     Get Value                   Type    Get Command     Initial Value       Description     Sec     Attribute
     ---------                   ----    -----------     -------------       -----------     ---     ---------
     FOG_COORDINATE_SOURCE_EXT   Z2      GetIntegerv,    FRAGMENT_DEPTH_EXT  Source of fog   3.10    fog

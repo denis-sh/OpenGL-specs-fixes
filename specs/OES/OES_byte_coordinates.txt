@@ -112,7 +112,7 @@ Errors
 
 New State
 
-(table 6.6, pp. 214-215)
+    (table 6.6, pp. 214-215)
 
     Get Value      Type      Get Command  Value  Description  Sec.  Attribute
     ---------      ----      -----------  -----  -----------  ----  ---------

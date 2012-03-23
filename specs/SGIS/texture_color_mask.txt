@@ -159,7 +159,7 @@ Errors
 
 New State
 
-(table 6.?, p. ???)
+    (table 6.?, p. ???)
 
     Get Value                       Type    Get Command     Initial Value   Description     Sec Attribute
     ---------                       ----    -----------     -------------   -----------     --- ---------

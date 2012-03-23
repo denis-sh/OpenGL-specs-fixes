@@ -3300,9 +3300,9 @@ New State
 
 
 
-Move the following existing state from "Implementation Dependent
-Values", tables 6.33-6.37 to into a new table called "Framebuffer
-Dependent Values", table 9.nnn.
+    Move the following existing state from "Implementation Dependent
+    Values", tables 6.33-6.37 to into a new table called "Framebuffer
+    Dependent Values", table 9.nnn.
 
     Get Value
     ---------
@@ -3327,8 +3327,8 @@ Dependent Values", table 9.nnn.
     ACCUM_ALPHA_BITS
     STENCIL_REF
 
-To the same table called "Framebuffer Dependent Values", table 9.nnn
-add the following new framebuffer dependent state.
+    To the same table called "Framebuffer Dependent Values", table 9.nnn
+    add the following new framebuffer dependent state.
 
     Get Value               Type  Get Command     Minimum Value    Description             Section  Attribute
     ---------               ----  -----------     -------------    -------------------     -------  ---------

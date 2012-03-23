@@ -642,7 +642,7 @@ Errors
 
 New State
 
-(table 6.19, page 245)
+    (table 6.19, page 245)
     Get Value                 Type  Get Command   Initial Value   Sec    Attribute
     ------------------------  ----  ------------  -------------   -----  ---------
     STENCIL_TAG_BITS_EXT      Z+   GetIntegerv     0              4.1.5  stencil-buffer
