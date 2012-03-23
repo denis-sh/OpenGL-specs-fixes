@@ -56,8 +56,8 @@ New Tokens
 
         GLX_SWAP_METHOD_OML                 0x8060
 
-Accepted as a value in the <attrib_list> parameter of glXChooseFBConfig
-and returned in the <value> parameter of glXGetFBConfig:
+    Accepted as a value in the <attrib_list> parameter of glXChooseFBConfig
+    and returned in the <value> parameter of glXGetFBConfig:
 
         GLX_SWAP_EXCHANGE_OML               0x8061
         GLX_SWAP_COPY_OML                   0x8062

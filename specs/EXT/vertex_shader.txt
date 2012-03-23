@@ -1275,33 +1275,33 @@ GLX Protocol
 
 Errors
 
-INVALID_VALUE is generated if the <num> parameter to InsertComponentEXT or
-ExtractComponentEXT is grater than 3.
+    INVALID_VALUE is generated if the <num> parameter to InsertComponentEXT or
+    ExtractComponentEXT is grater than 3.
 
-ILLEGAL_OPERATION is generated if the <src> parameter to InsertComponentsEXT
-is of type VECTOR_EXT and the <res> parameter is not of type MATRIX_EXT. 
+    ILLEGAL_OPERATION is generated if the <src> parameter to InsertComponentsEXT
+    is of type VECTOR_EXT and the <res> parameter is not of type MATRIX_EXT. 
 
-ILLEGAL_OPERATION is generated if the <src> parameter to InsertComponentsEXT
-is of type SCALAR_EXT and the <res> parameter is not of type VECTOR_EXT. 
+    ILLEGAL_OPERATION is generated if the <src> parameter to InsertComponentsEXT
+    is of type SCALAR_EXT and the <res> parameter is not of type VECTOR_EXT. 
 
-ILLEGAL_OPERATION is generated if the <src> parameter to ExtractComponentsEXT
-is of type VECTOR_EXT and the <res> parameter is not of type SCALAR_EXT. 
+    ILLEGAL_OPERATION is generated if the <src> parameter to ExtractComponentsEXT
+    is of type VECTOR_EXT and the <res> parameter is not of type SCALAR_EXT. 
 
-ILLEGAL_OPERATION is generated if the <src> parameter to ExtractComponentsEXT
-is of type MATRIX_EXT and the <res> parameter is not of type VECTOR_EXT. 
+    ILLEGAL_OPERATION is generated if the <src> parameter to ExtractComponentsEXT
+    is of type MATRIX_EXT and the <res> parameter is not of type VECTOR_EXT. 
 
-ILLEGAL_OPERATION is generated if the SetLocalConstantEXT is used multiple
-times on a single symbol in the context of defining a shader.
+    ILLEGAL_OPERATION is generated if the SetLocalConstantEXT is used multiple
+    times on a single symbol in the context of defining a shader.
 
-ILLEGAL_OPERATION is generated if the arguments provided to ShaderOpEXT are
-inconsistent with the table of operations. An example would be specifying
-a SCALAR_EXT result to the addition of 2 vectors.
+    ILLEGAL_OPERATION is generated if the arguments provided to ShaderOpEXT are
+    inconsistent with the table of operations. An example would be specifying
+    a SCALAR_EXT result to the addition of 2 vectors.
 
-ILLEGAL_OPERATION is generated if the datatype of the <res> or <in>
-parameters to WriteMaskEXT or SwizzleEXT is not VECTOR_EXT.
+    ILLEGAL_OPERATION is generated if the datatype of the <res> or <in>
+    parameters to WriteMaskEXT or SwizzleEXT is not VECTOR_EXT.
 
-ILLEGAL_OPERATION is generated if if the <res> parameter of ShaderOPEXT,
-SwizzleEXT, or WriteMaskEXT does is not a local or output storage type.
+    ILLEGAL_OPERATION is generated if if the <res> parameter of ShaderOPEXT,
+    SwizzleEXT, or WriteMaskEXT does is not a local or output storage type.
 
 New State
 

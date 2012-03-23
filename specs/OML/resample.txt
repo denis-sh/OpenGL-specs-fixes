@@ -334,8 +334,8 @@ Operations and the Frame Buffer)
         D_i,1 = S_i,1
         D_i,2 = S_i,3
 
-XXX Note that the "last pixel" case is only needed for readbacks where
-XXX <width> is not even, so may be removable.
+    XXX Note that the "last pixel" case is only needed for readbacks where
+    XXX <width> is not even, so may be removable.
 
   - Add new figure 4.4 (renumber following figures):
 

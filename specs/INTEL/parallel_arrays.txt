@@ -21,13 +21,13 @@ Dependencies
 Overview
 
         This extension adds the ability to format vertex arrays in a way that's 
-efficient for SIMD architectures as well as caching.  In addition to storing 
-vertex data in staggered in a single array, or sparsely in separate arrays as 
-possible with existing vertex arrays, coordinates may be stored in individual 
-arrays.  
-The parallel array mode is enabled using Enable(PARALLEL_ARRAYS).
-Pointers to the coordinate arrays are specified using new vector versions of the
-Pointer functions.
+        efficient for SIMD architectures as well as caching.  In addition to storing 
+        vertex data in staggered in a single array, or sparsely in separate arrays as 
+        possible with existing vertex arrays, coordinates may be stored in individual 
+        arrays.  
+        The parallel array mode is enabled using Enable(PARALLEL_ARRAYS).
+        Pointers to the coordinate arrays are specified using new vector versions of the
+        Pointer functions.
 
 Issues
 
