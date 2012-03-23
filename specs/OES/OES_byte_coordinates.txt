@@ -130,10 +130,10 @@ New Implementation Dependent State
 
 Revision History
 
-Sep 23, 2002    Kari Pulli      Created the document
-Sep 26, 2002    Kari Pulli      Incorporated comments by Jon Leech
-Feb 26, 2003    David Blythe    Changed prefix to OES
-Jul 08, 2003    David Blythe    Deleted Dependencies on section, added
-                                extension number, narrow state table
-Jul 11, 2003    David Blythe    Changed to use OES suffixes
-Jul 12, 2003    David Blythe    Added note about GLX protocol
+    Sep 23, 2002    Kari Pulli      Created the document
+    Sep 26, 2002    Kari Pulli      Incorporated comments by Jon Leech
+    Feb 26, 2003    David Blythe    Changed prefix to OES
+    Jul 08, 2003    David Blythe    Deleted Dependencies on section, added
+                                    extension number, narrow state table
+    Jul 11, 2003    David Blythe    Changed to use OES suffixes
+    Jul 12, 2003    David Blythe    Added note about GLX protocol

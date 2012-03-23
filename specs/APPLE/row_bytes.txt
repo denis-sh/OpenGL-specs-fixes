@@ -158,6 +158,6 @@ Additions to table 4.5 of the 2.1 specification (PixelStore parameters (read)):
 
 Version History
 
-#1 - Initial document.
+    #1 - Initial document.
 
-#2 - Added state segment.
+    #2 - Added state segment.

@@ -192,7 +192,7 @@ New Implementation Dependent State
 
 Revision History
 
-Changes due to IHV feedback, revision 1.3, September 2, 1997 (ljp)
+  Changes due to IHV feedback, revision 1.3, September 2, 1997 (ljp)
 
     Made scene_marker a property of the visual or pixel format, rather than
     an enable. Made DrawBuffer within a scene, or ReadPixels/CopyPixels of

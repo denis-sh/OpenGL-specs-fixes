@@ -669,7 +669,7 @@ Dependencies on WGL_ARB_extensions_string
 
 Revision History
 
-Changes from EXT_pixel_format:
+  Changes from EXT_pixel_format:
 
    * Added WGL prefix to name to avoid possible name collisions
    * EXT suffix changed to ARB

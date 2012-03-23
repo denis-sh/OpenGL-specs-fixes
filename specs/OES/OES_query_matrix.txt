@@ -119,8 +119,8 @@ New Implementation Dependent State
 
 Revision History
 
-Apr 15, 2003    Kari Pulli      Created the document
-Jul 08, 2003    David Blythe    Clarified the Dependencies section,
-                                Added extension number
-Jul 12, 2003    David Blythe    Add GLX protocol note
+    Apr 15, 2003    Kari Pulli      Created the document
+    Jul 08, 2003    David Blythe    Clarified the Dependencies section,
+                                    Added extension number
+    Jul 12, 2003    David Blythe    Add GLX protocol note
 

@@ -990,17 +990,17 @@ Issues
 
 Revision History
 
-#12 September 26, 2005
+  #12 September 26, 2005
     - Fix copy/paste error in the example.
 
-#11 September 20, 2005
+  #11 September 20, 2005
     - Assign enum values.
 
-#10 September 19, 2005
+  #10 September 19, 2005
     - Remove FRAMEBUFFER_INCOMPLETE_ATTACHMENT_EXT clause and add the
       accompanying issue 16 explaining why.
 
-#09 September 19, 2005
+  #09 September 19, 2005
     - Add issue 15.
     - Fix FBO interaction. (depth_stencil can be attached twice)
     - Add Usage Examples section and example 1.
@@ -1008,38 +1008,38 @@ Revision History
     - Add more dependencies, add contributors.
     - Fix typos pointed out at ARB meeting.
 
-#08 September 9, 2005
+  #08 September 9, 2005
     - Resolve issues 13 and 14.
     - Add issue 10 for completeness.
     - Modify GetTexImage to permit depth and depth/stencil.
     - Incorporate feedback from Barthold's review.
 
-#07 August 29, 2005
+  #07 August 29, 2005
     - Record resolutions for issues 7-12.
     - Update the spec body to reflect the issue resolutions.
     - Add new issues 13-14.
     - Remove interaction with copy_depth_to_color (no resolution needed)
 
-#06 July 15, 2005
+  #06 July 15, 2005
     - Improve some wording in the issues section.
     - Add issue on interaction with NV_copy_depth_to_color.
     - Remove interaction with stenci_clear_tag (no resolution needed)
 
-#05 June 20, 2005
+  #05 June 20, 2005
      - Add (now removed) unresolved issue 12 on interactions with
        EXT_stencil_clear_tag.
 
-#04 June 10, 2005
+  #04 June 10, 2005
      - Add modifications to the EXT_framebuffer_object specification.
 
-#03 May 28, 2005
+  #03 May 28, 2005
      - Add DEPTH_STENCIL_EXT as a new base internal format,
      - Add DEPTH24_STENCIL8_EXT as a new sized internal format.
 
-#02 May 12, 2005
+  #02 May 12, 2005
     - Update to be written against OpenGL 2.0 specification.
 
-#01 May 12, 2005
+  #01 May 12, 2005
     - Start with NV_packed_depth_stencil as the basis for
     EXT_packed_depth_stencil.
     - Rename to EXT.

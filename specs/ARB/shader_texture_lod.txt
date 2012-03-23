@@ -495,38 +495,38 @@ Issues
 
 Revision History:
 
-10 - 2011-04-13 (Jon Leech)
+  10 - 2011-04-13 (Jon Leech)
     * Remove nonexistent textureCubProjLod from list of existing
       isotropic vertex texture functions (Khronos Bug 7205).
 
-9 - 2010-12-09 (Jon Leech)
+  9 - 2010-12-09 (Jon Leech)
     * Corrected typos where 1D texture functions were specified
       as taking sampler2D parameters (Khronos Bug 7008).
 
-8 - 2009-05-24 (Jon Leech)
+  8 - 2009-05-24 (Jon Leech)
     * Added to the Registry
     * Corrected minor typos
 
-7 - 2007-08-22
+  7 - 2007-08-22
     * Shipping status.
 
-6 - 2006-07-06
+  6 - 2006-07-06
     * Clarified ProjGrad.
     * Added issue 7.
     * Clarified cubemap.
 
-5 - 2006-06-08
+  5 - 2006-06-08
     * u(x,y),v(x,y) and w(x,y) are used for wrap calculations.
       Their definitions (with ARB_texture_rectangle interaction)
       are restored.
     * Clean up defined/undefined language of functions in
       overview.
 
-4 - 2006-05-25
+  4 - 2006-05-25
     * Follow ASCII conventions.  See examples in core
       spec equations 3.23, 3.24, & 3.25 and EXT_texture_3D.
 
-3 - 2006-05-25
+  3 - 2006-05-25
     * Add #extension and #define
     * Explicitly reference page/paragraph in core edits.
     * Rework texture function descriptions.  Add language
@@ -534,7 +534,7 @@ Revision History:
       extension must be enabled for the functions to be
       available.
 
-2 - 2006-05-25
+  2 - 2006-05-25
     * Name changes.
     * Added interaction with ARB_texture_rectangle.
     * Added interaction with EXT_texture_anisotropic.
@@ -542,5 +542,5 @@ Revision History:
       within non-uniform control flow and the vertex shader.
     * Relocated issues to the tail of the spec.
 
-1 - 2006-05-17
+  1 - 2006-05-17
     Initial ARB version
