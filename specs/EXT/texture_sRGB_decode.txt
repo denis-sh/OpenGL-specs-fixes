@@ -124,78 +124,78 @@ Additions to Chapter 3 of the 2.1 Specification (Rasterization)
     ----                       ----       -------------     ------------
     TEXTURE_SRGB_DECODE_EXT    enum        DECODE_EXT       DECODE_EXT, SKIP_DECODE_EXT
     
--- Section 3.8.8, Texture Minification
+ -- Section 3.8.8, Texture Minification
 
-    Add to the end of the "Automatic Mipmap Generation" subsection:
+     Add to the end of the "Automatic Mipmap Generation" subsection:
 
-    If the automatic mipmap generation is applied to a texture
-    whose internal format is one of SRGB_EXT, SRGB8_EXT,
-    SRGB_ALPHA_EXT, SRGB8_ALPHA8_EXT, SLUMINANCE_ALPHA_EXT,
-    SLUMINANCE8_ALPHA8_EXT, SLUMINANCE_EXT, SLUMINANCE8_EXT,
-    COMPRESSED_SRGB_EXT, COMPRESSED_SRGB_ALPHA_EXT,
-    COMPRESSED_SLUMINANCE_EXT, COMPRESSED_SLUMINANCE_ALPHA_EXT,
-    COMPRESSED_SRGB_S3TC_DXT1_EXT, COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT,
-    COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT, or
-    COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT, and the TEXTURE_SRGB_DECODE_EXT
-    parameter for the current texture unit is DECODE_EXT, the RGB
-    texel components are decoded to a linear components as described
-    in section 3.8.15 prior to downsampling; then after downsampling,
-    the linear components are re-encoded as sRGB in the following manner:
+     If the automatic mipmap generation is applied to a texture
+     whose internal format is one of SRGB_EXT, SRGB8_EXT,
+     SRGB_ALPHA_EXT, SRGB8_ALPHA8_EXT, SLUMINANCE_ALPHA_EXT,
+     SLUMINANCE8_ALPHA8_EXT, SLUMINANCE_EXT, SLUMINANCE8_EXT,
+     COMPRESSED_SRGB_EXT, COMPRESSED_SRGB_ALPHA_EXT,
+     COMPRESSED_SLUMINANCE_EXT, COMPRESSED_SLUMINANCE_ALPHA_EXT,
+     COMPRESSED_SRGB_S3TC_DXT1_EXT, COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT,
+     COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT, or
+     COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT, and the TEXTURE_SRGB_DECODE_EXT
+     parameter for the current texture unit is DECODE_EXT, the RGB
+     texel components are decoded to a linear components as described
+     in section 3.8.15 prior to downsampling; then after downsampling,
+     the linear components are re-encoded as sRGB in the following manner:
 
-    If cl is the linear color component, then the corresponding sRGB
-    encoded component is encoded as follows
+     If cl is the linear color component, then the corresponding sRGB
+     encoded component is encoded as follows
 
-             {  cl * 12.92,                  cl < 0.0031308
-        cs = {
-             {  1.055 * cl^0.41666 - 0.055,  cl >= 0.0031308
+              {  cl * 12.92,                  cl < 0.0031308
+         cs = {
+              {  1.055 * cl^0.41666 - 0.055,  cl >= 0.0031308
 
-    If the automatic mipmap generation is applied to a texture whose
-    internal format is one of the sRGB formats listed previously and
-    the TEXTURE_SRGB_DECODE_EXT parameter for the texture object is
-    SKIP_DECODE_EXT, the sRGB decode and encode steps are skipped during
-    mipmap generation.
+     If the automatic mipmap generation is applied to a texture whose
+     internal format is one of the sRGB formats listed previously and
+     the TEXTURE_SRGB_DECODE_EXT parameter for the texture object is
+     SKIP_DECODE_EXT, the sRGB decode and encode steps are skipped during
+     mipmap generation.
 
--- Section 3.8.15, sRGB Color Decoding
+ -- Section 3.8.15, sRGB Color Decoding
 
-    (section was previously titled sRGB Color Conversion)
+     (section was previously titled sRGB Color Conversion)
 
-    Replace current text with the following:
-    
-    If the currently bound texture's internal format is one
-    of SRGB_EXT, SRGB8_EXT, SRGB_ALPHA_EXT, SRGB8_ALPHA8_EXT,
-    SLUMINANCE_ALPHA_EXT, SLUMINANCE8_ALPHA8_EXT, SLUMINANCE_EXT,
-    SLUMINANCE8_EXT, COMPRESSED_SRGB_EXT, COMPRESSED_SRGB_ALPHA_EXT,
-    COMPRESSED_SLUMINANCE_EXT, COMPRESSED_SLUMINANCE_ALPHA_EXT,
-    COMPRESSED_SRGB_S3TC_DXT1_EXT, COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT,
-    COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT, or
-    COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT, and the TEXTURE_SRGB_DECODE_EXT
-    parameter for the current texture unit is DECODE_EXT, the red, green, and blue
-    components are decoded from an sRGB color space to a linear color
-    space as part of filtering described in sections 3.8.8 and 3.8.9.
-    Any alpha component is left unchanged. Ideally, implementations
-    should perform this color decoding on each sample prior to filtering
-    but implementations are allowed to perform this decoding after
-    filtering (though this post-filtering approach is inferior to
-    decoding from sRGB prior to filtering).
+     Replace current text with the following:
+     
+     If the currently bound texture's internal format is one
+     of SRGB_EXT, SRGB8_EXT, SRGB_ALPHA_EXT, SRGB8_ALPHA8_EXT,
+     SLUMINANCE_ALPHA_EXT, SLUMINANCE8_ALPHA8_EXT, SLUMINANCE_EXT,
+     SLUMINANCE8_EXT, COMPRESSED_SRGB_EXT, COMPRESSED_SRGB_ALPHA_EXT,
+     COMPRESSED_SLUMINANCE_EXT, COMPRESSED_SLUMINANCE_ALPHA_EXT,
+     COMPRESSED_SRGB_S3TC_DXT1_EXT, COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT,
+     COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT, or
+     COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT, and the TEXTURE_SRGB_DECODE_EXT
+     parameter for the current texture unit is DECODE_EXT, the red, green, and blue
+     components are decoded from an sRGB color space to a linear color
+     space as part of filtering described in sections 3.8.8 and 3.8.9.
+     Any alpha component is left unchanged. Ideally, implementations
+     should perform this color decoding on each sample prior to filtering
+     but implementations are allowed to perform this decoding after
+     filtering (though this post-filtering approach is inferior to
+     decoding from sRGB prior to filtering).
 
-    The decoding from an sRGB encoded component, cs, to a linear
-    component, cl, is as follows
+     The decoding from an sRGB encoded component, cs, to a linear
+     component, cl, is as follows
 
-            {  0,                          cs <= 0
-            {
-            {  cs / 12.92,                 0 < cs <= 0.04045
-       cl = {
-            {  ((cs + 0.055)/1.055)^2.4,   0.04045 < cs < 1
-            {
-            {  1,                          cs >= 1
+             {  0,                          cs <= 0
+             {
+             {  cs / 12.92,                 0 < cs <= 0.04045
+        cl = {
+             {  ((cs + 0.055)/1.055)^2.4,   0.04045 < cs < 1
+             {
+             {  1,                          cs >= 1
 
-    Assume cs is the sRGB component in the range [0,1].
-    
-    If the TEXTURE_SRGB_DECODE_EXT parameter is SKIP_DECODE_EXT, the value 
-    is returned without decoding. The TEXTURE_SRGB_DECODE_EXT
-    parameter state is ignored for any texture with an internal format
-    not explicitly listed above, as no decoding needs to be done.
-    
+     Assume cs is the sRGB component in the range [0,1].
+     
+     If the TEXTURE_SRGB_DECODE_EXT parameter is SKIP_DECODE_EXT, the value 
+     is returned without decoding. The TEXTURE_SRGB_DECODE_EXT
+     parameter state is ignored for any texture with an internal format
+     not explicitly listed above, as no decoding needs to be done.
+     
 Dependencies on ARB_sampler_objects or OpenGL 3.3 or later
 
     If ARB_sampler_objects or OpenGL 3.3 or later is NOT supported,
