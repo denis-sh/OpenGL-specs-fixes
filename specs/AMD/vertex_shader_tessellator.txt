@@ -454,37 +454,37 @@ New Implementation Dependent State
 
 Sample Code
 
-#extension GL_AMD_vertex_shader_tessellator : require
+    #extension GL_AMD_vertex_shader_tessellator : require
 
-__samplerVertexAMD Vertex;
-__samplerVertexAMD Normal;
-__samplerVertexAMD Texcoord0;
-__samplerVertexAMD Temperature;
-__samplerVertexAMD Pressure;
+    __samplerVertexAMD Vertex;
+    __samplerVertexAMD Normal;
+    __samplerVertexAMD Texcoord0;
+    __samplerVertexAMD Temperature;
+    __samplerVertexAMD Pressure;
 
-attribute float myTemperature;
+    attribute float myTemperature;
 
-void main ( void )
-{
-    gl_Vertex = vec4( 0.0 );
-    gl_Normal = vec4( 0.0 );
-    gl_MultiTexCoord0 = vec4( 0.0 );
-    myTemperature = 0.0;
-    float myPressure = 0.0;  // Don't have to interpolate to attribute
-
-    for ( int i=0; i<3; i++ )
+    void main ( void )
     {
-       float weight = gl_BarycentricCoord[i];
+        gl_Vertex = vec4( 0.0 );
+        gl_Normal = vec4( 0.0 );
+        gl_MultiTexCoord0 = vec4( 0.0 );
+        myTemperature = 0.0;
+        float myPressure = 0.0;  // Don't have to interpolate to attribute
 
-       gl_Vertex         += weight*vertexFetchAMD( Vertex,      gl_VertexTriangleIndex[i] );
-       gl_Normal         += weight*vertexFetchAMD( Normal,      gl_VertexTriangleIndex[i] );
-       gl_MultiTexCoord0 += weight*vertexFetchAMD( Texcoord0,   gl_VertexTriangleIndex[i] );
-       myTemperature     += weight*vertexFetchAMD( Temperature, gl_VertexTriangleIndex[i] ).x;
-       myPressure        += weight*vertexFetchAMD( Pressure,    gl_VertexTriangleIndex[i] ).x;
+        for ( int i=0; i<3; i++ )
+        {
+           float weight = gl_BarycentricCoord[i];
 
+           gl_Vertex         += weight*vertexFetchAMD( Vertex,      gl_VertexTriangleIndex[i] );
+           gl_Normal         += weight*vertexFetchAMD( Normal,      gl_VertexTriangleIndex[i] );
+           gl_MultiTexCoord0 += weight*vertexFetchAMD( Texcoord0,   gl_VertexTriangleIndex[i] );
+           myTemperature     += weight*vertexFetchAMD( Temperature, gl_VertexTriangleIndex[i] ).x;
+           myPressure        += weight*vertexFetchAMD( Pressure,    gl_VertexTriangleIndex[i] ).x;
+
+        }
+        // Rest of vertex shader goes here....
     }
-    // Rest of vertex shader goes here....
-}
 
 Issues
 

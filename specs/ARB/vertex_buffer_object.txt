@@ -1945,20 +1945,20 @@ Usage Examples
         ...
 
         // Initialize buffer object, and null the data pointer
-#ifdef USE_BUFFER_OBJECTS
+    #ifdef USE_BUFFER_OBJECTS
         BindBufferARB(ARRAY_BUFFER_ARB, 1);
         BufferDataARB(ARRAY_BUFFER_ARB, 320, data, STATIC_DRAW_ARB);
         free(data);
         data = NULL;
-#endif
+    #endif
 
         // Frame rendering loop
         while (...) {
 
             // Define arrays
-#ifdef USE_BUFFER_OBJECTS
+    #ifdef USE_BUFFER_OBJECTS
             BindBufferARB(ARRAY_BUFFER_ARB, 1);
-#endif
+    #endif
             VertexPointer(4, FLOAT, 0, data);
             ColorPointer(4, UNSIGNED_BYTE, 0, data+256);
 
@@ -1979,13 +1979,13 @@ Usage Examples
         }
 
         // Delete buffer object
-#ifdef USE_BUFFER_OBJECTS
+    #ifdef USE_BUFFER_OBJECTS
         int buffer[1] = {1};
         DeleteBuffersARB(1, buffer);
-#else
+    #else
         // Free system memory buffer
         free(data);
-#endif
+    #endif
 
 
     Vertex arrays using a mapped buffer object:

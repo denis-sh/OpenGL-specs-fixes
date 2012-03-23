@@ -849,13 +849,13 @@ Additions to Chapter 7 of the OpenGL Shading Language 4.10.6 Specification
 
 Add to Section 7.4, Built-In Constants
 
-const int gl_MaxVertexAtomicCounters = 0;          // minimum maximum
-const int gl_MaxTessControlAtomicCounters = 0;     // minimum maximum
-const int gl_MaxTessEvaluationAtomicCounters = 0;  // minimum maximum
-const int gl_MaxGeometryAtomicCounters = 0;        // minimum maximum
-const int gl_MaxFragmentAtomicCounters = 8;        // minimum maximum
-const int gl_MaxCombinedAtomicCounters = 8;        // minimum maximum
-const int gl_MaxAtomicCounterBindings = 1;         // minimum maximum
+    const int gl_MaxVertexAtomicCounters = 0;          // minimum maximum
+    const int gl_MaxTessControlAtomicCounters = 0;     // minimum maximum
+    const int gl_MaxTessEvaluationAtomicCounters = 0;  // minimum maximum
+    const int gl_MaxGeometryAtomicCounters = 0;        // minimum maximum
+    const int gl_MaxFragmentAtomicCounters = 8;        // minimum maximum
+    const int gl_MaxCombinedAtomicCounters = 8;        // minimum maximum
+    const int gl_MaxAtomicCounterBindings = 1;         // minimum maximum
 
 Additions to Chapter 8 of the OpenGL Shading Language 1.50 Specification
 (Built-in Functions)

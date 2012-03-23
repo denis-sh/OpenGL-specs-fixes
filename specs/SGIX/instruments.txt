@@ -71,59 +71,60 @@ New Procedures and Functions
     int GetInstrumentsSGIX(void)
 
     An example of using the calls to test the extension:
-{
-#ifdef GL_SGIX_instruments
 
-   static GLint buffer[64];
-   GLvoid *bufp;
-   int id, count0, count1, r;
+    {
+    #ifdef GL_SGIX_instruments
 
-   /* define the buffer to hold the measurments */
-   glInstrumentsBufferSGIX(sizeof(buffer)/sizeof(GLint), (GLint *) buffer);
+       static GLint buffer[64];
+       GLvoid *bufp;
+       int id, count0, count1, r;
 
-   /* enable the instruments from which one wishes to take measurements */
-   glEnable(<an enum for instrument in use>);
+       /* define the buffer to hold the measurments */
+       glInstrumentsBufferSGIX(sizeof(buffer)/sizeof(GLint), (GLint *) buffer);
 
-   glStartInstrumentsSGIX();
-   /* insert GL commands here */
-   glReadInstrumentsSGIX(14);
-   /* insert GL commands here */
-   glStopInstrumentsSGIX(15);
+       /* enable the instruments from which one wishes to take measurements */
+       glEnable(<an enum for instrument in use>);
 
-   /* the number of msrmnts since the buffer was specified can be queried */
-   glGetIntegerv(GL_INSTRUMENT_MEASUREMENTS_SGIX,&r); /* r should be 2 */
+       glStartInstrumentsSGIX();
+       /* insert GL commands here */
+       glReadInstrumentsSGIX(14);
+       /* insert GL commands here */
+       glStopInstrumentsSGIX(15);
 
-   glGetPointervEXT(GL_INSTRUMENT_BUFFER_SGIX,&bufp);
-   /* bufp should be equal to buffer */
+       /* the number of msrmnts since the buffer was specified can be queried */
+       glGetIntegerv(GL_INSTRUMENT_MEASUREMENTS_SGIX,&r); /* r should be 2 */
 
-   /*
-    * we can do a GetInstrumentsSGIX before or after the calls to
-    * PollInstrumentsSGIX but to be sure of exactly what 
-    * measurements are in the buffer, we can use PollInstrumentsSGIX.
-    */
-   count0 = glGetInstrumentsSGIX();
-   /* count0 will be a count of from 0 to 2 multiples of the size
-    * in words of the instrument measurement we have enabled.
-    * If buffer was overflowed, count0 will be 1.
-    */
+       glGetPointervEXT(GL_INSTRUMENT_BUFFER_SGIX,&bufp);
+       /* bufp should be equal to buffer */
 
-   while (!(r = glPollInstrumentsSGIX(&id))) ;
-   /* if r is -1, we have overflowed, if it is 1, id will
-    * have the value of the marker passed in with the first
-    * measurement request (should be 14)
-    */
+       /*
+        * we can do a GetInstrumentsSGIX before or after the calls to
+        * PollInstrumentsSGIX but to be sure of exactly what 
+        * measurements are in the buffer, we can use PollInstrumentsSGIX.
+        */
+       count0 = glGetInstrumentsSGIX();
+       /* count0 will be a count of from 0 to 2 multiples of the size
+        * in words of the instrument measurement we have enabled.
+        * If buffer was overflowed, count0 will be 1.
+        */
 
-   while (!(r = glPollInstrumentsSGIX(&id))) ;
-   /* see the note on the first poll; id should be 15 */
+       while (!(r = glPollInstrumentsSGIX(&id))) ;
+       /* if r is -1, we have overflowed, if it is 1, id will
+        * have the value of the marker passed in with the first
+        * measurement request (should be 14)
+        */
 
-   count1 = glGetInstrumentsSGIX();
-   /* the sum of count0 and count1 should be 2 times
-    * the size in words of an instrument measurement
-    * that we have enabled.
-    */
+       while (!(r = glPollInstrumentsSGIX(&id))) ;
+       /* see the note on the first poll; id should be 15 */
 
-#endif
-}
+       count1 = glGetInstrumentsSGIX();
+       /* the sum of count0 and count1 should be 2 times
+        * the size in words of an instrument measurement
+        * that we have enabled.
+        */
+
+    #endif
+    }
 
 
 New Tokens
