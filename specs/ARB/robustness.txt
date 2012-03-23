@@ -238,8 +238,8 @@ New Tokens
 Additions to Chapter 2 of the OpenGL 3.2 (Compatibility Profile)
 Specification (OpenGL Operation)
 
-Add a new subsection after 2.5 "GL Errors" and renumber subsequent
-sections accordingly
+  Add a new subsection after 2.5 "GL Errors" and renumber subsequent
+  sections accordingly
 
     2.6 "Graphics Reset Recovery"
 

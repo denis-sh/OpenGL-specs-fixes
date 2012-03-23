@@ -159,16 +159,16 @@ Additions to Chapter 3 of the OpenGL 1.5 Specification (Rasterization)
 Additions to Chapter 4 of the OpenGL 1.5 Specification (Per-Fragment
 Operations and the Framebuffer)
 
-Add to 4.3.2 (Reading Pixels), right before the subsection titled
-"Obtaining Pixels form the Framebuffer":
+  Add to 4.3.2 (Reading Pixels), right before the subsection titled
+  "Obtaining Pixels form the Framebuffer":
 
     "ReadPixels generates INVALID_OPERATION if READ_FRAMEBUFFER_BINDING
     (section 4.4) is non-zero, the read framebuffer is framebuffer
     complete, and the value of SAMPLE_BUFFERS for the read framebuffer
     is greater than zero."
 
-Modify the following text to section 4.3.3, page 194, that was added to
-the definition of CopyPixels by EXT_framebuffer_blit:
+  Modify the following text to section 4.3.3, page 194, that was added to
+  the definition of CopyPixels by EXT_framebuffer_blit:
 
     "Finally, the behavior of several GL operations is specified "as if
     the arguments were passed to CopyPixels."  These operations include:
@@ -186,8 +186,8 @@ the definition of CopyPixels by EXT_framebuffer_blit:
     DRAW_FRAMEBUFFER_BINDING_EXT (section 4.4) is not "framebuffer
     complete".
 
-In 4.3.3 (Copying Pixels), add to the section describing BlitFramebuffer
-that was added by EXT_framebuffer_blit.
+  In 4.3.3 (Copying Pixels), add to the section describing BlitFramebuffer
+  that was added by EXT_framebuffer_blit.
 
     "If SAMPLE_BUFFERS for the read framebuffer is greater than zero and
     SAMPLE_BUFFERS for the draw framebuffer is zero, the samples
@@ -213,7 +213,7 @@ that was added by EXT_framebuffer_blit.
     identical, or if the formats of the read and draw framebuffers are
     not identical."
 
-Modification to 4.4.2.1 (Renderbuffer Objects)
+  Modification to 4.4.2.1 (Renderbuffer Objects)
 
     Add, just above the definition of RenderbufferStorageEXT:
 
@@ -280,7 +280,7 @@ Modification to 4.4.2.1 (Renderbuffer Objects)
      is equivalent to calling RenderbufferStorageMultisampleEXT with
      <samples> equal to zero."
 
-Modification to 4.4.4.2 (Framebuffer Completeness)
+  Modification to 4.4.4.2 (Framebuffer Completeness)
 
     Add an entry to the bullet list:
 
@@ -311,7 +311,7 @@ Additions to Chapter 5 of the OpenGL 1.5 Specification (Special Functions)
 Additions to Chapter 6 of the OpenGL 1.5 Specification (State and State
 Requests)
 
-Modification to 6.1.3 (Enumerated Queries):
+  Modification to 6.1.3 (Enumerated Queries):
 
     In the list of state query functions, modify the definition of
     GetRenderbufferParameterivEXT as follows:

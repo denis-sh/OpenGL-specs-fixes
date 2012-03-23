@@ -165,49 +165,49 @@ New Tokens
 Additions to Chapter 2 of the OpenGL 4.1 (Core Profile) Specification
 (OpenGL Operation)
 
-Changes to Section 2.9 Buffer Objects
+  Changes to Section 2.9 Buffer Objects
 
-Add to table 2.8 (p. 41)
+  Add to table 2.8 (p. 41)
 
     Target Name                Purpose              Described in section(s)
     ---------------------  ----------------------   -----------------------
     ATOMIC_COUNTER_BUFFER  Atomic counter storage          2.11.8
 
-Changes to Section Binding Buffer Objects to Indexed Targets
+  Changes to Section Binding Buffer Objects to Indexed Targets
 
-Change end of first sentence in section, p. 42
+  Change end of first sentence in section, p. 42
 
     ...target must be ATOMIC_COUNTER_BUFFER, TRANSFORM_FEEDBACK_BUFFER
     or UNIFORM_BUFFER.
 
-2.11.7 Uniform Variables
+  2.11.7 Uniform Variables
 
-Replace third sentence of paragraph one in the section, p. 72
-beginning with "Uniforms are program..."
+  Replace third sentence of paragraph one in the section, p. 72
+  beginning with "Uniforms are program..."
 
     Uniforms, except for subroutine uniforms, are program...
 
-Replace first sentence of paragraph two in the section, p. 72
-beginning with "Sets of uniforms can be..."
+  Replace first sentence of paragraph two in the section, p. 72
+  beginning with "Sets of uniforms can be..."
 
     Sets of uniforms, except for samplers, subroutine uniforms and
     atomic counters, can be grouped into <uniform blocks>.
 
-Modify first sentence of first paragraph, p. 73
-beginning with "The amount of storage..."
+  Modify first sentence of first paragraph, p. 73
+  beginning with "The amount of storage..."
 
     The amount of storage available for uniform variables,
     except for subroutine uniforms and atomic counters,
     in the default uniform block...
 
-Modify first sentence of second paragraph, p. 73
-beginning with "When a program..."
+  Modify first sentence of second paragraph, p. 73
+  beginning with "When a program..."
 
     When a program is successfully linked, all active
     uniforms, except for atomic counters, ...
 
-Insert a pragraph prior to third paragraph, p. 73
-beginning with "Similary, when a program..."
+  Insert a pragraph prior to third paragraph, p. 73
+  beginning with "Similary, when a program..."
 
     Similarly, when a program is successfully linked,
     all active atomic counters are assigned bindings,
@@ -225,14 +225,14 @@ beginning with "Similary, when a program..."
     assigned after each successful re-link.
 
 
-Modify the final line on paragraph continuing on p. 74
-ending "or if <name> is associated with a named uniform block."
+  Modify the final line on paragraph continuing on p. 74
+  ending "or if <name> is associated with a named uniform block."
 
     ... if <name> is associated with an atomic counter,
     or if <name> is associated with a named uniform block.
 
-Insert section prior to the last paragraph on p. 76,
-begining with "Each active uniform, whether in a named..."
+  Insert section prior to the last paragraph on p. 76,
+  begining with "Each active uniform, whether in a named..."
 
     In programs with active atomic counter uniforms, each buffer object
     binding point associated with one or more active atomic counters is
@@ -298,51 +298,51 @@ begining with "Each active uniform, whether in a named..."
     tessellation evaluation, geometry, or fragment programming stages of
     <program>, respectively, is returned."
 
-Modify first sentence of last paragraph on p. 76,
-beginning with "Each active uniform, whether in a named..."
+  Modify first sentence of last paragraph on p. 76,
+  beginning with "Each active uniform, whether in a named..."
 
     Each active uniform, except for subroutine uniforms,
     whether in a the default block, in a named uniform block, or
     an atomic counter...
 
-Modify first sentence of the fourth paragraph on p. 77
-beginning with "The name of an active..."
+  Modify first sentence of the fourth paragraph on p. 77
+  beginning with "The name of an active..."
 
     The name of an active uniform, except for subroutine
     uniforms, may be querried...
 
 
-Replace the last paragraph on p. 77
-beginning with "Each uniform variable..."
+  Replace the last paragraph on p. 77
+  beginning with "Each uniform variable..."
 
     Each active uniform variable, except subroutine uniforms, 
     is broken down into one or more strings using the "." (dot) 
     and "[]" operators, if necessary, to the point that it is 
     legal to pass each string back into GetUniformIndices.
 
-Modify first sentence of first paragraph on p. 78
-beginning with "Information about active uniforms..."
+  Modify first sentence of first paragraph on p. 78
+  beginning with "Information about active uniforms..."
 
     Information about active uniforms, except for
     subroutine uniforms, can be...
 
-Replace the fourth paragraph on p. 78
-beginning with "Each uniform variable..."
+  Replace the fourth paragraph on p. 78
+  beginning with "Each uniform variable..."
 
     Each active uniform variable, except subroutine uniforms, 
     is broken down into one or more strings using the "." (dot) 
     and "[]" operators, if necessary, to the point that it is 
     legal to pass each string back into GetUniformIndices.
 
-Modify the last paragraph 
+  Modify the last paragraph 
 
-Add to Table 2.13, p. 81
+  Add to Table 2.13, p. 81
 
     Type Name Token              Keyword      Attrib  Xfb
     ---------------------------  -----------  ------  ---
     UNSIGNED_INT_ATOMIC_COUNTER  atomic_uint         
 
-Modify description of UNIFORM_OFFSET query in GetActiveUniformsiv, p. 82
+  Modify description of UNIFORM_OFFSET query in GetActiveUniformsiv, p. 82
 
     If <pname> is UNIFORM_OFFSET, then an array of buffer offsets is returned.
     For uniforms in a named uniform block, the returned value will be its
@@ -359,7 +359,7 @@ Modify description of UNIFORM_OFFSET query in GetActiveUniformsiv, p. 82
     elements in an array, or zero for uniforms not declared as an array.  For
     all other uniforms, a stride of -1 will be returned.
 
-Add prior to "Loading Uniform Values In The Default Uniform Block", p. 83
+  Add prior to "Loading Uniform Values In The Default Uniform Block", p. 83
 
     If <pname> is UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX, then an array
     identifying the active atomic counter buffer index of each of the uniforms
@@ -369,21 +369,21 @@ Add prior to "Loading Uniform Values In The Default Uniform Block", p. 83
     properties of the associated buffer, and not necessarily the binding point
     specified in the uniform declaration.
 
-Modify first sentence of first new paragraph on p. 83
-beginning with "To load values into the uniform variables..."
+  Modify first sentence of first new paragraph on p. 83
+  beginning with "To load values into the uniform variables..."
 
     To load values into the uniform variables of the default uniform block
     of the active program object, except for subroutine uniforms and atomic
     counters, ..."
  
-Modify first sentence of the fifth paragraph on p. 84
-beginning with "For all other uniform types..."
+  Modify first sentence of the fifth paragraph on p. 84
+  beginning with "For all other uniform types..."
 
     For all other uniform types, except for subroutine
     uniforms and atomic counters, ...
 
 
-Add new unnumbered subsections at the end of the section, p. 90
+  Add new unnumbered subsections at the end of the section, p. 90
 
     Atomic Counter Buffers
 
@@ -453,9 +453,9 @@ Add new unnumbered subsections at the end of the section, p. 90
     undefined, and may result in GL interruption or termination.
 
 
-Add to Section 2.11.11 Shader Execution, p. 102, inserting before Shader Inputs
+  Add to Section 2.11.11 Shader Execution, p. 102, inserting before Shader Inputs
 
-Atomic Counter Access
+  Atomic Counter Access
 
     Shaders have the ability to set and get atomic counters.  The maximum number
     of atomic counters available to shaders are the values of the implementation
@@ -476,20 +476,20 @@ Atomic Counter Access
 Additions to Chapter 6 of the OpenGL 4.1 (Core Profile) Specification
 (State and State Requests)
 
-Add to Section 6.1.12, immediately before the description of IsProgramPipeline
-(p. 335)
+  Add to Section 6.1.12, immediately before the description of IsProgramPipeline
+  (p. 335)
 
     If <pname> is ACTIVE_ATOMIC_COUNTER_BUFFERS, the number of active atomic
     counter buffers used by <program> is returned.
 
 Additions to Appendix A (Invariance)
 
-Add additional sentence to A.3 Invariance Rules, Rule 4 (p. 399)
+  Add additional sentence to A.3 Invariance Rules, Rule 4 (p. 399)
 
     Invariance is relaxed for shaders with side effects (such
     as accessing atomic counters), see A.5, Atomic Counter Invariance.
 
-Add A.5 Atomic Counter Invariance
+  Add A.5 Atomic Counter Invariance
 
     When using a program containing atomic counters, the following
     invariance rules are intended to provide repeatability guarantees
@@ -522,7 +522,7 @@ Add A.5 Atomic Counter Invariance
 
 Additions to Appendix D (Shared Objects and Multiple Contexts)
 
-Modify D.3 (Propagating State Changes)
+  Modify D.3 (Propagating State Changes)
 
     (add to list of bullets at the end of the section, p. 467)
 
@@ -669,20 +669,20 @@ Additions to the OpenGL Shading Langauge 4.10.6 Specification
 
 Additions to Chapter 3 of the OpenGL Shading Language 4.10.6 Specification
 
-Add to 3.6 Keywords (pp. 13-15)
+  Add to 3.6 Keywords (pp. 13-15)
 
     atomic_uint
 
 Additions to Chapter 4 of the OpenGL Shading Language 4.10.6 Specification
 
-Add to Section 4.1 Basic Types
+  Add to Section 4.1 Basic Types
 
     Unsigned Integer Counter Types (opaque)
 
     Type         Meaning
     atomic_uint  a handle for accessing an unsigned integer atomic counter
 
-Insert Section 4.1.8 Atomic Counters (existing 4.1.8 becomes 4.1.9, and so on)
+  Insert Section 4.1.8 Atomic Counters (existing 4.1.8 becomes 4.1.9, and so on)
 
     4.1.8 Atomic Counters
 
@@ -699,12 +699,12 @@ Insert Section 4.1.8 Atomic Counters (existing 4.1.8 becomes 4.1.9, and so on)
     can they be assigned into.
 
 
-Modify last sentence of first paragraph of section 4.3.5, p. 36
-beginning with "Sampler types cannot..."
+  Modify last sentence of first paragraph of section 4.3.5, p. 36
+  beginning with "Sampler types cannot..."
 
     Sampler types and atomic counter types cannot..."
 
-Insert Section 4.3.6 Atomic Counters.  (Existing 4.3.6 becomes 4.3.7, and so on)
+  Insert Section 4.3.6 Atomic Counters.  (Existing 4.3.6 becomes 4.3.7, and so on)
 
     4.3.6  Uniform
 
@@ -739,7 +739,7 @@ Insert Section 4.3.6 Atomic Counters.  (Existing 4.3.6 becomes 4.3.7, and so on)
     be equal for a uniform variable of the same name.
 
 
-Add Section 4.3.8.4 Uniform Layout Qualifiers
+  Add Section 4.3.8.4 Uniform Layout Qualifiers
 
     Layout qualifiers can be used on uniform declarations.  The uniform qualifier
     identifiers for uniforms are
@@ -777,9 +777,9 @@ Add Section 4.3.8.4 Uniform Layout Qualifiers
     It is a compile error to bind an atomic counter with
     a value greater than or equal to gl_MaxAtomicCounterBindings.
 
-Add Section 4.3.8.3 Uniform Layout Qualifiers prior to
-existing 4.3.8.3 Uniform Block Layout Qualifiers, and renumber
-subsequent sections
+  Add Section 4.3.8.3 Uniform Layout Qualifiers prior to
+  existing 4.3.8.3 Uniform Block Layout Qualifiers, and renumber
+  subsequent sections
 
     Layout qualifiers can be used on uniform declarations.  The layout
     qualifiers identifiers for uniforms are
@@ -847,7 +847,7 @@ subsequent sections
 Additions to Chapter 7 of the OpenGL Shading Language 4.10.6 Specification
 (Built-in Variables)
 
-Add to Section 7.4, Built-In Constants
+  Add to Section 7.4, Built-In Constants
 
     const int gl_MaxVertexAtomicCounters = 0;          // minimum maximum
     const int gl_MaxTessControlAtomicCounters = 0;     // minimum maximum
@@ -860,7 +860,7 @@ Add to Section 7.4, Built-In Constants
 Additions to Chapter 8 of the OpenGL Shading Language 1.50 Specification
 (Built-in Functions)
 
-Add Section 8.10  Atomic Counter Functions (existing 8.10 becomes 8.11, and so on)
+  Add Section 8.10  Atomic Counter Functions (existing 8.10 becomes 8.11, and so on)
 
     8.10  Atomic Counter Functions
 

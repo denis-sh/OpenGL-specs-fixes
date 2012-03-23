@@ -1612,7 +1612,7 @@ Operations and the Framebuffer)
     framebuffer object, and the state of the images attached to the
     currently bound framebuffer object.
 
-XXX [from jon leech] describe derivation of red green and blue size
+    XXX [from jon leech] describe derivation of red green and blue size
 
 
     4.4.6 Mapping between Pixel and Element in Attached Image

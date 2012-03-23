@@ -316,7 +316,7 @@ Additions to Chapter 3 of the OpenGL Shading Language 1.20 Specification
 Additions to Chapter 4 of the OpenGL Shading Language 1.20 Specification
 (Variables and Types)
 
-4.3.4 Attribute, Change third sentence:
+  4.3.4 Attribute, Change third sentence:
 
     "Attribute values are read-only as far as the vertex shader is
     concerned, unless GL_AMD_vertex_shader_tessellator is enabled.  If
@@ -332,9 +332,9 @@ Additions to Chapter 6 of the OpenGL Shading Language 1.20 Specification
 Additions to Chapter 7 of the OpenGL Shading Language 1.20 Specification
 (Built-in Variables)
 
-7.1 Vertex Shader Special Variables
+  7.1 Vertex Shader Special Variables
 
-Add the list of intrinsically declared with the following types:
+  Add the list of intrinsically declared with the following types:
 
         // if GL_AMD_vertex_shader_tessellator enabled
 
@@ -358,9 +358,9 @@ Add the list of intrinsically declared with the following types:
     It is a link error if both a Triangle Tessellator shader and a Quad
     Tessellator shader are attached to a program.
 
-7.3 Vertex Shader Built-In Attributes
+  7.3 Vertex Shader Built-In Attributes
 
-Add the following paragraph.
+  Add the following paragraph.
 
     If GL_AMD_vertex_shader_tessellator is enabled, the values of the
     built-in Attributes are undefined.
@@ -368,15 +368,15 @@ Add the following paragraph.
 Additions to Chapter 8 of the OpenGL Shading Language 1.20 Specification
 (Built-in Functions)
 
-8.7 Texture Lookup Functions
+  8.7 Texture Lookup Functions
 
-Rename section to "Lookup Functions"
+  Rename section to "Lookup Functions"
 
-Add in front of first sentence:
+  Add in front of first sentence:
 
     Vertex lookup functions are available to the vertex shader.
 
-Add to the front of the table of functions:
+  Add to the front of the table of functions:
 
     Syntax:
     vec4  vertexFetchAMD( __samplerVertexAMD sampler, int i );

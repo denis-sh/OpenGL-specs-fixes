@@ -88,7 +88,7 @@ Additions to Chapter 6 of the 1.0 Specification (State and State Requests)
     the appropriate bit(s) in <mask>.
 
 
-(Table 6.1 (Attribute Groups).)
+    (Table 6.1 (Attribute Groups).)
 
     Attribute                   Constant                ALL_ATTRIB_BITS
     ---------                   --------                ---------------
@@ -119,7 +119,7 @@ Additions to Chapter 6 of the 1.0 Specification (State and State Requests)
 
 Additions to the GLX Specification
 
-(In the glXCopyContext description)
+    (In the glXCopyContext description)
 
     The single symbolic constant GL_ALL_ATTRIB_BITS can be used to
     copy all of the attribute groups defined by the core GL. Additional

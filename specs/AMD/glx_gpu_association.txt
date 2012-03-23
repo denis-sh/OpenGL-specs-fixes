@@ -397,7 +397,7 @@ Additions to the GLX 1.4 Specification
 
 Additions to Chapter 4 of the OpenGL 1.5 Specification (Per-Fragment
 Operations and the Frame Buffer)
-Modify the beginning of section 4.4.1 as follows:
+  Modify the beginning of section 4.4.1 as follows:
 
     When an assoicated context is bound, the default state for an associated
     context is invalid for rendering. Because there is no attached window,

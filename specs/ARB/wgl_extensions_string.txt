@@ -83,7 +83,7 @@ Additions to Chapter 6 of the 1.2 Specification (State and State Requests)
 
 Additions to the WGL Specification
 
-Advertising WGL Extensions
+  Advertising WGL Extensions
 
     Applications should call wglGetProcAddress to see whether or not
     wglGetExtensionsStringARB is supported. If it is supported then it

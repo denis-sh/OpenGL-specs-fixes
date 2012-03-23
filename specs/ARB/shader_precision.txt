@@ -83,7 +83,7 @@ Additions to the OpenGL Shading Language 4.00 Specification
 
       #define GL_ARB_shader_precision 1
 
-Changes to Section 4.1.4 Floats
+  Changes to Section 4.1.4 Floats
 
     Keep the first two sentences of the second paragraph:
 
@@ -110,7 +110,7 @@ Changes to Section 4.1.4 Floats
     ...See section 4.5.1 Range and Precision for more details on precision and
     usage of NaNs (Not a Number) and Infs (positive or negative infinities).
 
-Add to Section 4.5.1 Range and Precision
+  Add to Section 4.5.1 Range and Precision
 
     The precision of stored single and double precision floating-point variables is 
     defined by the IEEE 754 standard for 32-bit and 64-bit floating-point numbers.  
@@ -156,7 +156,7 @@ Add to Section 4.5.1 Range and Precision
 
         TBD.
 
-Changes to Section 8.3 Common Functions
+  Changes to Section 8.3 Common Functions
 
     In the table for intBitsToFloat, uintBitsToFloat, and packDouble2x32, change
 
