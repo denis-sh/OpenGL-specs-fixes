@@ -1030,7 +1030,7 @@ Deprecated Functionality
 
 Sample Usage
 
------------------------------------------------------
+    -----------------------------------------------------
 
     # The following program shows how to perform a simple modulation
     # between the interpolated color and a single texture:
@@ -1042,7 +1042,7 @@ Sample Usage
         MUL r0, r0, color0;      #perform the modulation
     EndPass;
 
------------------------------------------------------
+    -----------------------------------------------------
 
     # The following program shows how to use the constant
     # declaration block in a fragment program.
@@ -1059,7 +1059,7 @@ Sample Usage
         ADD r0, c2, r0;  # add constant param and put result in r0
     EndPass;
 
------------------------------------------------------
+    -----------------------------------------------------
 
     # The following is an example that performs bumped
     # cubic environment mapping:
@@ -1092,7 +1092,7 @@ Sample Usage
         MAD r0, r0, r2.a, r1;        # (diffuse * base) + (spec * gloss)
     EndPass;
 
------------------------------------------------------
+    -----------------------------------------------------
 
     # Chrome shader from ATIRadeon8500_PointLight_Shader demo
     !!ATIfs1.0
@@ -1127,7 +1127,7 @@ Sample Usage
         MUL r0.sat, r0, r2.r;       # apply point light attenuation
     EndPass;
 
------------------------------------------------------
+    -----------------------------------------------------
 
     # Rusty shader from ATIRadeon8500_PointLight_Shader demo
     !!ATIfs1.0
@@ -1174,7 +1174,7 @@ Sample Usage
         MUL r0.sat, r0, r2.r; # apply attenuation
     EndPass;
 
------------------------------------------------------
+    -----------------------------------------------------
 
 Revision History
 
