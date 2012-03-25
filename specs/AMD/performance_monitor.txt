@@ -134,7 +134,7 @@ New Tokens
         PERFMON_RESULT_SIZE_AMD                    0x8BC5
         PERFMON_RESULT_AMD                         0x8BC6
 
-Addition to the GL specification
+Additions to the GL specification
 
     Add a new section called Performance Monitoring
     

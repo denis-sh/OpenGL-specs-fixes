@@ -323,7 +323,7 @@ Issues
      the dependent rendering.
 
 
-Usage Example
+Usage Examples
 
     GLuint queryID = 0x12345678;
 

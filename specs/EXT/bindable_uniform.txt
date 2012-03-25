@@ -2,7 +2,7 @@ Name
 
     EXT_bindable_uniform
 
-Name String
+Name Strings
 
     GL_EXT_bindable_uniform
 

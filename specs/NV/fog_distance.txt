@@ -195,7 +195,7 @@ New State
                                                 dependent          fog distance      
                                                                    is computed
 
-New Implementation State
+New Implementation Dependent State
 
     None
 

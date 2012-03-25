@@ -2,7 +2,7 @@ Name
 
     EXT_polygon_offset
 
-Name String
+Name Strings
 
     GL_EXT_polygon_offset
 

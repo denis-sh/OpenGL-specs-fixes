@@ -41,7 +41,7 @@ Contributors
     Eric Werness
     Cliff Woolley
 
-Contacts
+Contact
 
     Jeff Juliano, NVIDIA Corporation (jjuliano 'at' nvidia.com)
     Jeremy Sandmel, Apple Computer (jsandmel 'at' apple.com)

@@ -2,7 +2,7 @@ Name
 
     ARB_conservative_depth
 
-Name String
+Name Strings
     
     GL_ARB_conservative_depth
 

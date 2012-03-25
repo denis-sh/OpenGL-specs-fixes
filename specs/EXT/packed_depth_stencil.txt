@@ -762,7 +762,7 @@ New State
 
     None.
 
-Usage ExampleS
+Usage Examples
 
     (1) Attach a DEPTH_STENCIL_EXT texture image to an FBO as both the
         depth and stencil buffers.

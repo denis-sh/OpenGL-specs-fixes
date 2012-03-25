@@ -179,7 +179,7 @@ and OpenGL 4.1
     The relevant spec edits (modifying language introduced here) can be found
     in the ARB_separate_shader_objects extension.
 
-GLX protocol
+GLX Protocol
 
     None.
 

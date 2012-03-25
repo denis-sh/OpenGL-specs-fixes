@@ -2,7 +2,7 @@ Name
 
     SGIX_reference_plane
 
-Name String
+Name Strings
 
     GL_SGIX_reference_plane
 
@@ -73,7 +73,7 @@ Additions to Chapter 2 of the 1.0 Specification (OpenGL Operation)
 
     None
 
-additions to Chapter 3 of the 1.0 Specification (Rasterization)
+Additions to Chapter 3 of the 1.0 Specification (Rasterization)
 
     If enabled, the reference plane is used to calculate the fragment's z
     value based on the fragment's x and y values and the reference plane

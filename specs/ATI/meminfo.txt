@@ -84,7 +84,7 @@ Issues
         largest pool available, total auxilliary pool available, and largest
         auxilliary pool available. Auxilliary pool are for remote memory.
 
-New Functions and Procedures
+New Procedures and Functions
 
     None
 
@@ -166,7 +166,7 @@ Errors
 
     None
 
-GLX protocol
+GLX Protocol
 
     None
 

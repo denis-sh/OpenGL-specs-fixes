@@ -156,7 +156,7 @@ Additions to table 4.5 of the 2.1 specification (PixelStore parameters (read)):
     PACK_ROW_BYTES_APPLE    integer     0               [0, inf]
 
 
-Version History
+Revision History
 
     #1 - Initial document.
 

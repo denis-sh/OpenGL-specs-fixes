@@ -683,7 +683,7 @@ Usage Examples
     glXReleaseTexImageEXT (display, glxpixmap, GLX_FRONT_LEFT_EXT);
 
 
-Version History
+Revision History
     
     1. 26 Nov 2005 - DavidR
         Initial version

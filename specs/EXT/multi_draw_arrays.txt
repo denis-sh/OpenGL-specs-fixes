@@ -171,7 +171,7 @@ New State
 
     None
 
-OpenGL ES interactions
+Interactions with OpenGL ES
     This extension can also be implemented against OpenGL ES 1.x or 
         OpenGL ES 2.0. In those cases, remove references to glBegin, glEnd,
         and to GL_QUAD_STRIP, GL_QUADS, and GL_POLYGON.

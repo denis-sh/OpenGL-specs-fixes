@@ -45,7 +45,7 @@ Contributors
     Eric Werness
     Cliff Woolley
 
-Contacts
+Contact
 
     Rob Barris (rbarris 'at' gmail.com)
     Daniel Koch, TransGaming Inc. 

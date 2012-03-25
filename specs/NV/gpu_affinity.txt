@@ -368,7 +368,7 @@ Interactions with GL_EXT_framebuffer_object
       If the framebuffer object extension is not supported, all language
       referring to framebuffer objects is deleted.
 
-Usage examples
+Usage Examples
 
       // Example 1 - Normal window creation, DC setup and
       // context creation.
@@ -623,6 +623,6 @@ Issues
 
       RESOLUTION: This is a hole which needs to be addressed separately.
 
-Revision history
+Revision History
 
       None

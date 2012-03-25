@@ -475,7 +475,7 @@ New State
     ------------------  ----  -----------          ----------------------------  --------------- -------
     SURFACE_STATE_NV    Z     VDPAUGetSurfaceivNV  GL_SURFACE_REGISTERED_NV      Surface state   3.8.3
 
-New Implementation State
+New Implementation Dependent State
 
     None
 

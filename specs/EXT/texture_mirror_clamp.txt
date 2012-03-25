@@ -147,7 +147,7 @@ Overview
     "mirror image".  This mode allows the texture to be mirrored only
     once in the negative s, t, and r directions.
 
-New Procedure and Functions
+New Procedures and Functions
 
     None
 

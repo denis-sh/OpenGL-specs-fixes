@@ -469,7 +469,7 @@ New State
     ARRAY_OBJECT_OFFSET_ATI     GetIntegerv     Z+      0               -
         
     
-Usage Example
+Usage Examples
 
     Here is a simple example that demonstrates usage of the extension.
     The example provides a comparison between traditional vertex

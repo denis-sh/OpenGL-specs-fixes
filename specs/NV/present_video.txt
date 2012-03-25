@@ -799,7 +799,7 @@ New State
     CURRENT_TIME_NV             1xZ   GetVideoui64vNV   0              Video device timer         4.4    -
 
 
-New Implementation Dependent state
+New Implementation Dependent State
 
     Get Value               Type  Get Command       Minimum Value   Description                 Sec    Attribute
     ----------------------  ----  ----------------  --------------  --------------------------  -----  ---------

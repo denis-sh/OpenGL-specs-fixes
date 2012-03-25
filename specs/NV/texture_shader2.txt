@@ -574,7 +574,7 @@ New State
     [ The "Zn" type is an n-valued integer where n is the
       implementation-dependent number of texture units supported.]
 
-New Implementation State
+New Implementation Dependent State
 
      None
 

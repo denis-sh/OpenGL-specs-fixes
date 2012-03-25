@@ -381,12 +381,12 @@ Dependencies on OES_vertex_type_10_10_10_2
     Therefore while the purpose of the two extensions is similar, they
     are not functionally, source-level, or data-level compatible.
 
-Dependencies with EXT_vertex_array_bgra
+Dependencies on EXT_vertex_array_bgra
 
     If EXT_vertex_array_bgra is not supported, remove references to BGRA as an
     allowed parameter for <size> in VertexAttrib.
 
-Interaction with OpenGL 3.2, Core Profile
+Interactions with OpenGL 3.2, Core Profile
 
     When using a core profile of OpenGL 3.2, remove references to
     VertexPointer, NormalPointer, ColorPointer, SecondaryColorPointer,

@@ -2,7 +2,7 @@ Name
 
     NV_geometry_shader4
 
-Name String
+Name Strings
 
     GL_NV_geometry_shader4
 
@@ -178,7 +178,7 @@ Interactions with NV_transform_feedback
     shader, and from that data the maximum value for GEOMETRY_VERTICES_OUT_EXT
     computed by the application.
 
-GLX protocol
+GLX Protocol
 
     None required
 

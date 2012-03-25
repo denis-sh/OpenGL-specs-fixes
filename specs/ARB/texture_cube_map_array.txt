@@ -108,7 +108,7 @@ Additions to Chapter 2 of OpenGL 3.0 Specification (OpenGL Operation)
       INT_SAMPLER_CUBE_MAP_ARRAY_ARB,
       UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_ARB,
 
-Addition to Chapter 3 of OpenGL 3.0 Specification (Rasterization)
+Additions to Chapter 3 of OpenGL 3.0 Specification (Rasterization)
 
     Modify section 3.9, "Texturing", page 175
 
@@ -566,7 +566,7 @@ New State
     TEXTURE_CUBE_MAP_ARRAY_ARB          nxI      GetTexImage   see 3.9.1  cube map array texture image      3.9.1    -
                                                                           at lod i
 
-Modification to the OpenGL shading Language Specification, Version 1.30.08
+Modifications to the OpenGL Shading Language Specification, Version 1.30.08
 
     #extension GL_ARB_texture_cube_map_array: <behavior>
 

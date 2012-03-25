@@ -291,7 +291,7 @@ New State
 
     [ where # is the value of MAX_GENERAL_COMBINERS_NV ]
 
-New Implementation State
+New Implementation Dependent State
 
      None
 

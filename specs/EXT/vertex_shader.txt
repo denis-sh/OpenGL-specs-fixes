@@ -124,7 +124,7 @@ Issues
 
 
 
-New Procedure and Functions
+New Procedures and Functions
 
     void BeginVertexShaderEXT( void )
     void EndVertexShaderEXT( void )

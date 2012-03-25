@@ -29,7 +29,7 @@ Overview
     that color originating from specular lighting be added to
     the fragment color _after_ texture application.
 
-New Procedures And Functions
+New Procedures and Functions
 
     None
 

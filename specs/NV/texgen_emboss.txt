@@ -336,7 +336,7 @@ New State
 
     (the TEXTURE_GEN_MODE type changes from 4xZ3 to 4xZ5)
 
-New Implementation State
+New Implementation Dependent State
 
     None
 

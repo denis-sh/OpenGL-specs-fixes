@@ -145,7 +145,7 @@ Usage Examples
 
     glXSwapIntervalEXT(dpy, drawable, interval);
 
-Version History
+Revision History
 
     1. 04 Nov 2011 - BrianN
         -Initial version

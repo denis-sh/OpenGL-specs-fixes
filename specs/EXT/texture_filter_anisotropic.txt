@@ -266,7 +266,7 @@ New State
     TEXTURE_MAX_ANISOTROPY_EXT   R    GetTexParameterfv  1.0             Maximum degree   3.8.5    texture
                                                                          of anisotropy
 
-New Implementation State
+New Implementation Dependent State
 
     (table 6.25, p215) add the entry:
 

@@ -188,14 +188,12 @@ Additions to Chapter 6 of the OpenGL 3.2 Specification
        if the number of bits is non-zero, ...
 
 
-Dependencies
-
-Version 3.2 (Compatibility Profile) interacts with this extension.
+Interactions with OpenGL 3.2 (Compatibility Profile)
 
    Other than adjusting the page numbers referenced in the edits, there are no
    further changes required for the Compatibility Profile specification.
 
-ARB_occlusion_query
+Interactions with ARB_occlusion_query
 
    If ARB_occlusion_query is not supported, then delete the enum
    SAMPLES_PASSED and delete sections of text refering to
@@ -203,7 +201,7 @@ ARB_occlusion_query
    points and state introduced by ARB_occlusion_query into
    this extension.
 
-Conditional Rendering
+Interactions with Conditional Rendering
 
    If Conditional Rendering is not supported, delete edits to
    section on Conditional Rendering.

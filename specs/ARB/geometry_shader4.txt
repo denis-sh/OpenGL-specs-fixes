@@ -2,7 +2,7 @@ Name
 
     ARB_geometry_shader4
 
-Name String
+Name Strings
 
     GL_ARB_geometry_shader4
 

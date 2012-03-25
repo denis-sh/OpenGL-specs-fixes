@@ -39,7 +39,7 @@ Issues
 
     None known
 
-New Procedure and Functions
+New Procedures and Functions
 
     None
 

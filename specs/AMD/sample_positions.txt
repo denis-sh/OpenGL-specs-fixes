@@ -154,7 +154,7 @@ New Implementation Dependent State
     SUBSAMPLE_DISTANCE_AMD       R+      GetFloatv    -       precision step between        4.1.3
                                                               subsamples
 
-Interaction with ARB_texture_multisample
+Interactions with ARB_texture_multisample
 
     If ARB_texture_multisample is not supported, remove all references to
     TEXTURE_FIXED_SAMPLE_LOCATIONS and to <fixedsamplelocations>. Also, should

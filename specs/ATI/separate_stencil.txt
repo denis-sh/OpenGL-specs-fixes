@@ -41,7 +41,7 @@ Issues
     
 
 
-New Procedure and Functions
+New Procedures and Functions
 
     StencilOpSeparateATI( GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)
     StencilFuncSeparateATI( GLenum frontfunc, GLenum backfunc, GLint ref,

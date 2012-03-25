@@ -2,7 +2,7 @@ Name
 
     AMD_conservative_depth
 
-Name String
+Name Strings
     
     GL_AMD_conservative_depth
 

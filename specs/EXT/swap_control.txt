@@ -194,7 +194,7 @@ Usage Examples
                "%u\n", swap, maxSwap);
     }
 
-Version History
+Revision History
 
     8. 8 Nov 2011 - BrianN
         - Added missing GLX protocol
