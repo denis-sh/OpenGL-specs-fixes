@@ -12,7 +12,7 @@ Contact
 
 Contributors
 
-    Kristian Høgsberg (kristian.h.kristensen 'at' intel.com)
+    Kristian Hoegsberg (kristian.h.kristensen 'at' intel.com)
     Ian Romanick (ian.d.romanick 'at' intel.com)
 
 Status
