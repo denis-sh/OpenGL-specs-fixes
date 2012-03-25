@@ -1,5 +1,3 @@
-GL_HP_occlusion_test - PRELIMINARY
-----------------------------------
 XXX - Not complete yet!!!
 
 Name
@@ -116,7 +114,3 @@ Issue
 
    - should the interface be based on render mode semantics
         no proposal at this time
-
-
-
---------------64E073B876D--
