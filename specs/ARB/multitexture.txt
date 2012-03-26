@@ -10,6 +10,10 @@ Status
 
     Complete. Approved by ARB on 9/15/1998
 
+Number
+
+    ARB Extension #1
+
 Overview
 
     NOTE: This extension no longer has its own specification document, since
