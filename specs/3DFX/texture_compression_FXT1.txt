@@ -10,6 +10,11 @@ Contact
 
     Don Mullis, 3dfx Interactive (dwm 'at' 3dfx.com)
 
+Notice
+
+    Copyright 1999-2000, 3dfx Interactive, Inc.
+    All rights reserved.
+
 Status
 
     CANDIDATE FOR FINAL DRAFT -- NOT YET COMPLETE
@@ -613,7 +618,3 @@ Revision History
     0.3,  02/23/00 dwm: Respond to feedback from Intel.
     0.4,  04/12/00 dwm: Updated to reflect final version of the
                         ARB_texture_compression extension.
-
-
-Copyright 1999-2000, 3dfx Interactive, Inc.
-All rights reserved.
